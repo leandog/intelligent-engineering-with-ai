@@ -1,5 +1,7 @@
 # Detailed Course Outline: Intelligent Engineering with AI (.NET)
 
+![LeanDog Logo](Assets/LeanDog-logo.png)
+
 ## Module 1: Traditional Test Driven Development (TDD) with AI Integration
 
 ### Day 1: Morning Session
@@ -149,12 +151,11 @@ This detailed morning session ensures participants are introduced to TDD in a pr
 
 ### Day 1: Afternoon Session
 
-This detailed afternoon session ensures participants build on their TDD skills while integrating AI tools effectively, practicing refactoring techniques, and tackling more complex problems like the Roman Numeral Calculator and Bowling Kata. This afternoon session includes an introduction to clean code concepts, ensuring participants learn to write clean, maintainable code while practicing TDD and integrating AI tools.
+This detailed afternoon session ensures participants build on their TDD skills while integrating AI tools effectively, practicing refactoring techniques, and tackling more complex problems like the Bowling Kata and Roman Numeral Calculator. This session includes an introduction to clean code concepts, ensuring participants learn to write clean, maintainable code while practicing TDD and integrating AI tools.
 
 **Overview of AI Tools and Current Capabilities (30 minutes)**
 
 1. **Introduction to AI Tools (15 minutes)**
-
    - Overview of GitHub Copilot and ChatGPT.
    - Discuss how these tools can assist in coding, testing, and documentation.
    - Provide a GitHub Copilot cheat sheet with common commands and tips.
@@ -164,10 +165,53 @@ This detailed afternoon session ensures participants build on their TDD skills w
    - Limitations and potential pitfalls to be aware of.
    - Best practices for integrating AI tools into the development workflow.
 
+**Introduction to the Bowling Kata (10 minutes)**
+
+1. **Overview of the Problem**
+   - Problem statement: Calculate the score of a bowling game considering strikes and spares.
+   - Importance of the problem for practicing TDD and AI integration.
+
+2. **TDD Approach for the Bowling Kata**
+   - Applying the TDD cycle: Red, Green, Refactor.
+   - Example scenarios and edge cases to consider.
+
+**Practical Exercise: Bowling Kata with TDD and AI Tools (1 hour)**
+
+3. **Step-by-Step Guide:**
+
+   **Step 1: Write the First Test (Red)**
+   - **Instructor Demonstration (10 minutes):**
+     - Use GitHub Copilot to generate initial test cases for the Bowling Kata problem.
+     - Discuss how to verify the generated code and ensure it aligns with TDD principles.
+
+   **Step 2: Make the Test Pass (Green)**
+   - **Instructor Demonstration (10 minutes):**
+     - Use Copilot to generate the minimal code needed to pass the test.
+     - Discuss the manual verification of the code's correctness.
+
+   **Step 3: Refactor**
+   - **Instructor Demonstration (10 minutes):**
+     - Refactor the code with the assistance of Copilot to improve readability and maintainability.
+     - Ensure the test still passes after refactoring.
+
+   **Step 4: Repeat the Cycle**
+   - **Instructor Demonstration (10 minutes):**
+     - Add additional test cases and iterate through the TDD cycle.
+     - Example Test Cases: Ensure various bowling game scenarios produce correct results.
+
+4. **Using ChatGPT as an Assistant (10 minutes)**
+   - **Instructor Demonstration:**
+     - Show how ChatGPT can provide explanations and suggestions during the TDD process.
+     - Example: Ask ChatGPT to suggest additional test cases or help debug issues.
+
+5. **Hands-On Practice: Pair Programming Exercise (15 minutes)**
+   - Participants work in pairs to implement the Bowling Kata using TDD and GitHub Copilot.
+   - Instructors provide guidance and support, ensuring adherence to TDD practices.
+   - Encourage participants to use ChatGPT to clarify doubts and get suggestions.
+
 **Introduction to the Roman Numeral Calculator Kata (10 minutes)**
 
 1. **Overview of the Problem**
-
    - Problem statement: Write a program that converts Roman numerals to integers and vice versa.
    - Importance of the problem for practicing TDD and AI integration.
 
@@ -180,37 +224,31 @@ This detailed afternoon session ensures participants build on their TDD skills w
 3. **Step-by-Step Guide:**
 
    **Step 1: Analyze Existing Code (10 minutes)**
-
    - **Instructor Demonstration:**
      - Review any existing code for the Roman Numeral Calculator.
      - Identify areas for improvement and potential refactoring opportunities.
 
    **Step 2: Write the First Test (Red)**
-
    - **Instructor Demonstration (15 minutes):**
      - Use GitHub Copilot to generate initial test cases for converting Roman numerals to integers.
      - Discuss how to verify the generated code and ensure it aligns with TDD principles.
 
    **Step 3: Make the Test Pass (Green)**
-
    - **Instructor Demonstration (10 minutes):**
      - Use Copilot to generate the minimal code needed to pass the test.
      - Discuss the manual verification of the code's correctness.
 
    **Step 4: Refactor**
-
    - **Instructor Demonstration (10 minutes):**
      - Refactor the code with the assistance of Copilot to improve readability and maintainability.
      - Ensure the test still passes after refactoring.
 
    **Step 5: Add New Features and Tests**
-
    - **Instructor Demonstration (15 minutes):**
      - Add new features to the Roman Numeral Calculator while ensuring all tests pass.
      - Use the TDD cycle: Red, Green, Refactor for each new feature.
 
 4. **Using ChatGPT as an Assistant (10 minutes)**
-
    - **Instructor Demonstration:**
      - Show how ChatGPT can provide explanations and suggestions during the TDD process.
      - Example: Ask ChatGPT to suggest additional test cases or help debug issues.
@@ -235,19 +273,16 @@ This detailed afternoon session ensures participants build on their TDD skills w
 7. **Step-by-Step Guide:**
 
    **Step 1: Identify Code Smells (10 minutes)**
-
    - **Instructor Demonstration:**
      - Use AI tools to identify code smells in the Roman Numeral Calculator codebase.
      - Discuss the significance of each identified issue.
 
    **Step 2: Refactor the Code (15 minutes)**
-
    - **Instructor Demonstration:**
      - Use AI tools to assist in refactoring the code.
      - Manually verify and improve the AI-suggested refactorings.
 
    **Step 3: Apply Clean Code Principles (20 minutes)**
-
    - **Instructor Demonstration:**
      - Refactor the codebase to adhere to clean code principles.
      - Examples of renaming variables, breaking down large functions, and removing duplication.
@@ -256,61 +291,13 @@ This detailed afternoon session ensures participants build on their TDD skills w
    - Participants work in pairs to refactor a provided codebase using AI tools and clean code principles.
    - Instructors provide guidance and support, ensuring best practices are followed.
 
-**Bowling Kata (1 hour 15 minutes)**
-
-9. **Introduction to the Bowling Kata (10 minutes)**
-   - Overview of the Bowling Kata problem:
-     - Calculate the score of a bowling game considering strikes and spares.
-   - Importance of the problem for practicing TDD and refactoring techniques.
-
-**Practical Exercise: Bowling Kata with TDD and AI Tools (1 hour 5 minutes)**
-
-10. **Step-by-Step Guide:**
-
-    **Step 1: Write the First Test (Red)**
-
-- **Instructor Demonstration (10 minutes):**
-  - Use GitHub Copilot to generate initial test cases for the Bowling Kata problem.
-  - Discuss how to verify the generated code and ensure it aligns with TDD principles.
-
-**Step 2: Make the Test Pass (Green)**
-
-- **Instructor Demonstration (10 minutes):**
-  - Use Copilot to generate the minimal code needed to pass the test.
-  - Discuss the manual verification of the code's correctness.
-
-**Step 3: Refactor**
-
-- **Instructor Demonstration (10 minutes):**
-  - Refactor the code with the assistance of Copilot to improve readability and maintainability.
-  - Ensure the test still passes after refactoring.
-
-**Step 4: Repeat the Cycle**
-
-- **Instructor Demonstration (10 minutes):**
-  - Add additional test cases and iterate through the TDD cycle.
-  - Example Test Cases: Ensure various bowling game scenarios produce correct results.
-
-11. **Using ChatGPT as an Assistant (10 minutes)**
-
-    - **Instructor Demonstration:**
-      - Show how ChatGPT can provide explanations and suggestions during the TDD process.
-      - Example: Ask ChatGPT to suggest additional test cases or help debug issues.
-
-12. **Hands-On Practice: Pair Programming Exercise (15 minutes)**
-    - Participants work in pairs to implement the Bowling Kata using TDD and GitHub Copilot.
-    - Instructors provide guidance and support, ensuring adherence to TDD practices.
-    - Encourage participants to use ChatGPT to clarify doubts and get suggestions.
-
 **Wrap-Up and Q&A (15 minutes)**
 
 1. **Summarize Key Takeaways from the Afternoon Session**
-
    - Emphasize the importance of TDD, AI tools, refactoring, and clean code principles.
    - Encourage continuous practice and improvement.
 
 2. **Open Floor for Questions and Discussions**
-
    - Address any challenges faced by participants.
    - Provide solutions and additional resources as needed.
 
