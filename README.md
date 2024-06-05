@@ -1,5 +1,7 @@
 # Intelligent Engineering with AI (.NET)
 
+![LeanDog Logo](Assets/LeanDog-logo.png)
+
 Welcome to the Intelligent Engineering with AI (.NET) course repository! This course focuses on integrating AI tools with traditional software engineering practices, specifically Test Driven Development (TDD), to enhance productivity and code quality.
 
 ## Course Overview
