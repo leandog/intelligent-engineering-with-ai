@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "csharpier.csharpier-vscode",
+    "github.copilot",
+    "ms-dotnettools.csdevkit",
+    "ms-dotnettools.csharp",
+    "ms-vscode.vscode-dotnet-runtime",
+    "ms-vscode.vscode-typescript-tslint-plugin",
+    "ms-vsliveshare.vsliveshare"
+  ]
+}
