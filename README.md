@@ -1,8 +1,8 @@
-# Intelligent Engineering with AI (.NET)
+# Intelligent Engineering with AI
 
 ![LeanDog Logo](Assets/LeanDog-logo.png)
 
-Welcome to the Intelligent Engineering with AI (.NET) course repository! This course focuses on integrating AI tools with traditional software engineering practices, specifically Test Driven Development (TDD), to enhance productivity and code quality.
+Welcome to the Intelligent Engineering with AI course repository! This course focuses on integrating AI tools with traditional software engineering practices, specifically Test Driven Development (TDD), to enhance productivity and code quality.
 
 ## Course Overview
 
@@ -71,12 +71,8 @@ This course is suitable for:
 
 1. Introduction to Prompt Engineering
 2. Practical Exercise: Stubs, Mocks, Fakes, and Doubles
-3. Building a Simple MVC Application with .NET and SQLite
+3. Building a Simple MVC Application
 4. Deploying the Application using GitHub Actions and a Free Cloud Provider
-
-## Pricing
-
-$1,600 per attendee.
 
 ## Additional Resources
 
