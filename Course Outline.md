@@ -1,4 +1,4 @@
-# Detailed Course Outline: Intelligent Engineering with AI (.NET)
+# Detailed Course Outline: Intelligent Engineering with AI
 
 ![LeanDog Logo](Assets/LeanDog-logo.png)
 
@@ -156,6 +156,7 @@ This detailed afternoon session ensures participants build on their TDD skills w
 **Overview of AI Tools and Current Capabilities (30 minutes)**
 
 1. **Introduction to AI Tools (15 minutes)**
+
    - Overview of GitHub Copilot and ChatGPT.
    - Discuss how these tools can assist in coding, testing, and documentation.
    - Provide a GitHub Copilot cheat sheet with common commands and tips.
@@ -168,6 +169,7 @@ This detailed afternoon session ensures participants build on their TDD skills w
 **Introduction to the Bowling Kata (10 minutes)**
 
 1. **Overview of the Problem**
+
    - Problem statement: Calculate the score of a bowling game considering strikes and spares.
    - Importance of the problem for practicing TDD and AI integration.
 
@@ -180,26 +182,31 @@ This detailed afternoon session ensures participants build on their TDD skills w
 3. **Step-by-Step Guide:**
 
    **Step 1: Write the First Test (Red)**
+
    - **Instructor Demonstration (10 minutes):**
      - Use GitHub Copilot to generate initial test cases for the Bowling Kata problem.
      - Discuss how to verify the generated code and ensure it aligns with TDD principles.
 
    **Step 2: Make the Test Pass (Green)**
+
    - **Instructor Demonstration (10 minutes):**
      - Use Copilot to generate the minimal code needed to pass the test.
      - Discuss the manual verification of the code's correctness.
 
    **Step 3: Refactor**
+
    - **Instructor Demonstration (10 minutes):**
      - Refactor the code with the assistance of Copilot to improve readability and maintainability.
      - Ensure the test still passes after refactoring.
 
    **Step 4: Repeat the Cycle**
+
    - **Instructor Demonstration (10 minutes):**
      - Add additional test cases and iterate through the TDD cycle.
      - Example Test Cases: Ensure various bowling game scenarios produce correct results.
 
 4. **Using ChatGPT as an Assistant (10 minutes)**
+
    - **Instructor Demonstration:**
      - Show how ChatGPT can provide explanations and suggestions during the TDD process.
      - Example: Ask ChatGPT to suggest additional test cases or help debug issues.
@@ -212,6 +219,7 @@ This detailed afternoon session ensures participants build on their TDD skills w
 **Introduction to the Roman Numeral Calculator Kata (10 minutes)**
 
 1. **Overview of the Problem**
+
    - Problem statement: Write a program that converts Roman numerals to integers and vice versa.
    - Importance of the problem for practicing TDD and AI integration.
 
@@ -224,31 +232,37 @@ This detailed afternoon session ensures participants build on their TDD skills w
 3. **Step-by-Step Guide:**
 
    **Step 1: Analyze Existing Code (10 minutes)**
+
    - **Instructor Demonstration:**
      - Review any existing code for the Roman Numeral Calculator.
      - Identify areas for improvement and potential refactoring opportunities.
 
    **Step 2: Write the First Test (Red)**
+
    - **Instructor Demonstration (15 minutes):**
      - Use GitHub Copilot to generate initial test cases for converting Roman numerals to integers.
      - Discuss how to verify the generated code and ensure it aligns with TDD principles.
 
    **Step 3: Make the Test Pass (Green)**
+
    - **Instructor Demonstration (10 minutes):**
      - Use Copilot to generate the minimal code needed to pass the test.
      - Discuss the manual verification of the code's correctness.
 
    **Step 4: Refactor**
+
    - **Instructor Demonstration (10 minutes):**
      - Refactor the code with the assistance of Copilot to improve readability and maintainability.
      - Ensure the test still passes after refactoring.
 
    **Step 5: Add New Features and Tests**
+
    - **Instructor Demonstration (15 minutes):**
      - Add new features to the Roman Numeral Calculator while ensuring all tests pass.
      - Use the TDD cycle: Red, Green, Refactor for each new feature.
 
 4. **Using ChatGPT as an Assistant (10 minutes)**
+
    - **Instructor Demonstration:**
      - Show how ChatGPT can provide explanations and suggestions during the TDD process.
      - Example: Ask ChatGPT to suggest additional test cases or help debug issues.
@@ -273,16 +287,19 @@ This detailed afternoon session ensures participants build on their TDD skills w
 7. **Step-by-Step Guide:**
 
    **Step 1: Identify Code Smells (10 minutes)**
+
    - **Instructor Demonstration:**
      - Use AI tools to identify code smells in the Roman Numeral Calculator codebase.
      - Discuss the significance of each identified issue.
 
    **Step 2: Refactor the Code (15 minutes)**
+
    - **Instructor Demonstration:**
      - Use AI tools to assist in refactoring the code.
      - Manually verify and improve the AI-suggested refactorings.
 
    **Step 3: Apply Clean Code Principles (20 minutes)**
+
    - **Instructor Demonstration:**
      - Refactor the codebase to adhere to clean code principles.
      - Examples of renaming variables, breaking down large functions, and removing duplication.
@@ -294,16 +311,18 @@ This detailed afternoon session ensures participants build on their TDD skills w
 **Wrap-Up and Q&A (15 minutes)**
 
 1. **Summarize Key Takeaways from the Afternoon Session**
+
    - Emphasize the importance of TDD, AI tools, refactoring, and clean code principles.
    - Encourage continuous practice and improvement.
 
 2. **Open Floor for Questions and Discussions**
+
    - Address any challenges faced by participants.
    - Provide solutions and additional resources as needed.
 
 3. **Preview of Day 2**
    - Focus on advanced TDD techniques and continuous integration.
-   - Introduction to the Gilded Rose Kata and building an MVC application.
+   - Introduction to the Gilded Rose Kata and building an API application.
 
 ## Module 2: Advanced TDD and Software Craftsmanship with AI Integration
 
@@ -434,11 +453,11 @@ This detailed morning session ensures participants build upon their knowledge fr
    - Provide solutions and additional resources as needed.
 
 3. **Preview of the Afternoon Session**
-   - Focus on prompt engineering, building an MVC application, and deploying using GitHub Actions and a free cloud provider.
+   - Focus on prompt engineering, building an API application, and deploying using GitHub Actions and a free cloud provider.
 
 ### Day 2: Afternoon Session
 
-This detailed afternoon session ensures participants gain practical experience in prompt engineering, building a simple MVC application, and deploying it using GitHub Actions and a free cloud provider. It also covers the important concepts of stubs, mocks, fakes, and test doubles, integrating them into the to-do task application.
+This detailed afternoon session ensures participants gain practical experience in prompt engineering, building a simple API application, and deploying it using GitHub Actions and a free cloud provider. It also covers the important concepts of stubs, mocks, fakes, and test doubles, integrating them into the to-do task application.
 
 **Introduction to Prompt Engineering (30 minutes)**
 
@@ -453,29 +472,28 @@ This detailed afternoon session ensures participants gain practical experience i
    - Use ChatGPT to generate code snippets, debug code, and provide documentation suggestions.
    - Share and discuss results as a group.
 
-**Building a Simple MVC Application with .NET and SQLite (1 hour 45 minutes)**
+**Building a Simple API Application (1 hour 45 minutes)**
 
-3. **Overview of the Application (15 minutes)**
+1. **Overview of the Application (15 minutes)**
 
-   - Explain the structure and components of an MVC application.
+   - Explain the structure and components of an API application.
    - Introduce the to-do task application as the example project.
    - Discuss the use of an in-memory database (SQLite) for simplicity and quick setup.
 
-4. **Setting Up the Project (30 minutes)**
+2. **Setting Up the Project (30 minutes)**
 
    - **Instructor Demonstration:**
-     - Create a new .NET MVC project.
+     - Create a new API project.
      - Set up SQLite as the in-memory database.
      - Configure the necessary dependencies and packages.
    - **Hands-On Practice:**
      - Participants follow along to set up their projects.
      - Instructors provide guidance and support.
 
-5. **Developing the To-Do Task Application (45 minutes)**
+3. **Developing the To-Do Task Application (45 minutes)**
    - **Instructor Demonstration:**
      - Implement the basic features of the to-do task application:
        - Create, Read, Update, and Delete (CRUD) operations for tasks.
-       - Using models, views, and controllers in the MVC framework.
      - Integrate GitHub Copilot to assist in writing code.
    - **Hands-On Practice:**
      - Participants work in pairs to implement the application.
