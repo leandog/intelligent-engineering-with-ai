@@ -17,19 +17,17 @@ Write a program that returns a list of strings from 1 to n, where n is the upper
 **Upper bound**: 15
 **Example output**: ['1', '2', 'Fizz', '4', 'Buzz', 'Fizz', '7', '8', 'Fizz', 'Buzz', '11', 'Fizz', '13', '14', 'FizzBuzz']
 */
-
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Xunit;
 
 namespace FizzBuzz
 {
-    [TestClass]
     public class FizzBuzzTests
     {
-        [TestMethod]
+        [Fact]
         public void TestFizzBuzz()
         {
             // var fizzBuzz = new FizzBuzz();
-            Assert.IsTrue(false, "Turn the checked value to true to pass this test");
+            Assert.True(false, "Turn the checked value to true to pass this test");
         }
     }
 }
