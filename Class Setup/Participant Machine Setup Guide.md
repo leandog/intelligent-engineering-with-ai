@@ -39,9 +39,10 @@ Install Recommended Extensions:
 - Search for and install the following extensions:
   1. C# Dev Kit
   2. C#
-  3. .NET Install Tool for Extension Authors
-  4. GitHub Copilot
-  5. CSharpier
+  3. .NET Core Test Explorer
+  4. .NET Install Tool for Extension Authors
+  5. GitHub Copilot
+  6. CSharpier
 
 Enable GitHub Copilot:
 
