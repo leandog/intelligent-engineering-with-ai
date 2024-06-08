@@ -14,14 +14,14 @@ This document outlines the prerequisites for participants, including necessary b
    - IDE: Visual Studio Code.
    - Version Control: Git.
 2. **Frameworks and SDKs**:
-   - .NET Core: Ensure the .NET Core SDK is installed.
+   - .NET 8.0 (latest): Ensure the .NET Core SDK is installed.
 3. **AI Tools**:
    - GitHub Copilot: Ensure you have access to GitHub Copilot.
    - ChatGPT: Access to ChatGPT for AI-driven code assistance and documentation.
 
 ## Required Access
 
-Your laptop must have the capabilities and proper configuration before attending. If you do not understand any of this, please contact your company’s tech support for help.
+Your laptop must have the capabilities and proper configuration before attending. If you do not understand any of this, please get in touch with your company’s tech support for help.
 
 - **Software Installation**: You should be able to install software on your laptop (Local Admin in Windows or Administrator in macOS).
 
