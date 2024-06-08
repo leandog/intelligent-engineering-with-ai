@@ -27,7 +27,7 @@ Clone the repository locally:
 Ensure the following software is installed and available on your machine:
 
 - Git
-- .NET Core SDK
+- .NET 8.0 (latest)
 - Visual Studio Code
 
 ### Step 4: Configure Visual Studio Code
