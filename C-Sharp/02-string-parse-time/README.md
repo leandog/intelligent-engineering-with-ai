@@ -2,21 +2,39 @@
 
 ![LeanDog Logo](/Assets/LeanDog-logo.png)
 
-## Fizz Buzz Kata
-
-[Fizz Buzz: Coding Dojo](http://codingdojo.org/kata/FizzBuzz)
+## String Parse Time Kata
 
 ## Problem Description
 
-Write a program that returns a list of numbers and strings from 1 to n, where n is the upper bound.
+Execution times for a program are outputted in a non-standard parseable time format.
 
-- For multiples of three, return “Fizz” instead of the number
-- For multiples of five, return “Buzz”
-- For numbers which are multiples of both three and five, return “FizzBuzz“
-- Otherwise, return the ordinal number
+The format is such:
 
-**Upper bound**: 15  
-**Example output**: ['1', '2', 'Fizz', '4', 'Buzz', 'Fizz', '7', '8', 'Fizz', 'Buzz', '11', 'Fizz', '13', '14', 'FizzBuzz']
+- `f'{amount} {duration type}'`
+- amount is a positive integer value
+- duration type is an enumeration of weighted values
+  - ms : .001
+  - sec : 1
+  - min : 60
+  - hr : 3600
+- different duration types are joined together with a space character
+- invalid input values equal zero
+
+Create a program, which, given a valid time format, calculates the time in seconds.
+
+**Examples:**
+
+| Input Value               | Expected Result |
+| ------------------------- | --------------- |
+| '1 ms'                    | .001            |
+| '1 sec'                   | 1               |
+| '1 min'                   | 60              |
+| '1 hr'                    | 3600            |
+| '5 sec 421 ms'            | 5.421           |
+| '9 min 57 sec'            | 597             |
+| '1 hr 33 min'             | 5580            |
+| '1 hr 1 min 1 sec 111 ms' | 3661.111        |
+| ''                        | 0               |
 
 ## Run
 
@@ -40,14 +58,14 @@ dotnet test
   ```csharp
   // Prompt Copilot to create test cases
   [Fact]
-  public void ShouldReturnFizzForMultiplesOf3()
+  public void ShouldReturnMillisecondsFor1Ms()
   {
       // Copilot will suggest code here
   }
   ```
 - **Implementing Minimal Code**: After your test case is written and fails, use Copilot to suggest minimal code to make the test pass.
   ```csharp
-  public string FizzBuzz(int number)
+  public double ParseTime(string time)
   {
       // Copilot will suggest implementation
   }
@@ -62,7 +80,7 @@ dotnet test
   ```
 - **Generating Code Snippets**: Request specific code snippets or solutions.
   ```csharp
-  // Can you generate a method to check for multiples of 3 and 5?
+  // Can you generate a method to parse different time formats?
   ```
 - **Debugging Help**: Use the chat to get help on debugging issues.
   ```csharp
@@ -77,14 +95,14 @@ dotnet test
 
 ### Example Copilot Chat Prompts:
 
-- "Explain how this code handles multiples of 3 and 5."
-- "Generate a method to convert numbers into FizzBuzz format."
-- "Why is my test for multiples of 3 failing?"
+- "Explain how this code parses time strings."
+- "Generate a method to convert '1 hr 33 min' into seconds."
+- "Why am I getting a format exception in my test?"
 
 ## Potential Questions to Ask Tyler Morgan
 
-- **Starting with TDD**: "How should I start TDD for the FizzBuzz problem?"
-- **Writing Initial Tests**: "What are some good initial test cases for the FizzBuzz problem?"
-- **Using AI Tools**: "How can I effectively use GitHub Copilot to assist with writing tests for FizzBuzz?"
-- **Handling Edge Cases**: "What are some edge cases I should consider when writing tests for FizzBuzz?"
-- **Refactoring Tips**: "How can I refactor my FizzBuzz code to ensure it's clean and maintainable?"
+- **Starting with TDD**: "How should I start TDD for the String Parse Time problem?"
+- **Writing Initial Tests**: "What are some good initial test cases for the String Parse Time problem?"
+- **Using AI Tools**: "How can I effectively use GitHub Copilot to assist with writing tests for String Parse Time?"
+- **Handling Edge Cases**: "What are some edge cases I should consider when writing tests for String Parse Time?"
+- **Refactoring Tips**: "How can I refactor my String Parse Time code to ensure it's clean and maintainable?"
