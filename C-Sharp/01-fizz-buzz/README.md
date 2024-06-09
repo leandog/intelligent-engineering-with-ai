@@ -6,7 +6,7 @@
 
 [Fizz Buzz: Coding Dojo](http://codingdojo.org/kata/FizzBuzz)
 
-## Problem Description
+### Problem Description
 
 Write a program that returns a list of numbers and strings from 1 to n, where n is the upper bound.
 
@@ -18,7 +18,7 @@ Write a program that returns a list of numbers and strings from 1 to n, where n 
 **Upper bound**: 15  
 **Example output**: ['1', '2', 'Fizz', '4', 'Buzz', 'Fizz', '7', '8', 'Fizz', 'Buzz', '11', 'Fizz', '13', '14', 'FizzBuzz']
 
-## Run
+### Run
 
 Project created using dotnet CLI.
 
@@ -28,13 +28,13 @@ Project created using dotnet CLI.
 dotnet test
 ```
 
-## TDD Cycle
+### TDD Cycle
 
 1. **Red**: Write a failing test case that defines a function or feature.
 2. **Green**: Write just enough code to make the test pass.
 3. **Refactor**: Clean up the code, ensuring that all tests still pass.
 
-## Tips for Using GitHub Copilot in TDD
+### Tips for Using GitHub Copilot in TDD
 
 - **Generating Test Cases**: Start by writing the test cases. Use prompts to guide Copilot to generate these test cases.
   ```csharp
@@ -69,19 +69,19 @@ dotnet test
   // Why is my test failing?
   ```
 
-### Using GitHub Copilot Chat in Visual Studio Code:
+#### Using GitHub Copilot Chat in Visual Studio Code:
 
 1. **Open your project** in Visual Studio Code.
 2. **Enable GitHub Copilot Chat**: Make sure you have the GitHub Copilot extension installed and enabled.
 3. **Start a new chat session**: Use the GitHub Copilot Chat panel to ask questions or request code snippets.
 
-### Example Copilot Chat Prompts:
+#### Example Copilot Chat Prompts:
 
 - "Explain how this code handles multiples of 3 and 5."
 - "Generate a method to convert numbers into FizzBuzz format."
 - "Why is my test for multiples of 3 failing?"
 
-## Potential Questions to Ask Tyler Morgan
+### Potential Questions to Ask Tyler Morgan
 
 - **Starting with TDD**: "How should I start TDD for the FizzBuzz problem?"
 - **Writing Initial Tests**: "What are some good initial test cases for the FizzBuzz problem?"

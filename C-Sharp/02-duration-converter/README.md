@@ -2,9 +2,9 @@
 
 ![LeanDog Logo](/Assets/LeanDog-logo.png)
 
-## String Parse Time Kata
+## Duration Converter Kata
 
-## Problem Description
+### Problem Description
 
 Execution times for a program are outputted in a non-standard parseable time format.
 
@@ -36,7 +36,7 @@ Create a program, which, given a valid time format, calculates the time in secon
 | '1 hr 1 min 1 sec 111 ms' | 3661.111        |
 | ''                        | 0               |
 
-## Run
+### Run
 
 Project created using dotnet CLI.
 
@@ -46,13 +46,13 @@ Project created using dotnet CLI.
 dotnet test
 ```
 
-## TDD Cycle
+### TDD Cycle
 
 1. **Red**: Write a failing test case that defines a function or feature.
 2. **Green**: Write just enough code to make the test pass.
 3. **Refactor**: Clean up the code, ensuring that all tests still pass.
 
-## Tips for Using GitHub Copilot in TDD
+### Tips for Using GitHub Copilot in TDD
 
 - **Generating Test Cases**: Start by writing the test cases. Use prompts to guide Copilot to generate these test cases.
   ```csharp
@@ -72,7 +72,7 @@ dotnet test
   ```
 - **Refactoring with Copilot**: Use Copilot to assist in refactoring the code to improve quality while keeping all tests green.
 
-## Tips for Using GitHub Copilot Chat Plugin in Visual Studio Code
+### Tips for Using GitHub Copilot Chat Plugin in Visual Studio Code
 
 - **Asking for Explanations**: If you are unsure about a particular piece of code, ask Copilot Chat to explain it.
   ```csharp
@@ -87,22 +87,22 @@ dotnet test
   // Why is my test failing?
   ```
 
-### Using GitHub Copilot Chat in Visual Studio Code:
+#### Using GitHub Copilot Chat in Visual Studio Code:
 
 1. **Open your project** in Visual Studio Code.
 2. **Enable GitHub Copilot Chat**: Make sure you have the GitHub Copilot extension installed and enabled.
 3. **Start a new chat session**: Use the GitHub Copilot Chat panel to ask questions or request code snippets.
 
-### Example Copilot Chat Prompts:
+#### Example Copilot Chat Prompts:
 
 - "Explain how this code parses time strings."
 - "Generate a method to convert '1 hr 33 min' into seconds."
 - "Why am I getting a format exception in my test?"
 
-## Potential Questions to Ask Tyler Morgan
+### Potential Questions to Ask Tyler Morgan
 
-- **Starting with TDD**: "How should I start TDD for the String Parse Time problem?"
-- **Writing Initial Tests**: "What are some good initial test cases for the String Parse Time problem?"
-- **Using AI Tools**: "How can I effectively use GitHub Copilot to assist with writing tests for String Parse Time?"
-- **Handling Edge Cases**: "What are some edge cases I should consider when writing tests for String Parse Time?"
-- **Refactoring Tips**: "How can I refactor my String Parse Time code to ensure it's clean and maintainable?"
+- **Starting with TDD**: "How should I start TDD for the Duration Converter Kata problem?"
+- **Writing Initial Tests**: "What are some good initial test cases for the Duration Converter Kata problem?"
+- **Using AI Tools**: "How can I effectively use GitHub Copilot to assist with writing tests for Duration Converter Kata?"
+- **Handling Edge Cases**: "What are some edge cases I should consider when writing tests for Duration Converter Kata?"
+- **Refactoring Tips**: "How can I refactor my Duration Converter Kata code to ensure it's clean and maintainable?"

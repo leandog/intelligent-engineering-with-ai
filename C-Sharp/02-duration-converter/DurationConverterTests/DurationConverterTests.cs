@@ -25,14 +25,14 @@ Create a program, which, given a valid time format, calculates the time in secon
 */
 using Xunit;
 
-namespace StringParseTime
+namespace DurationConverter
 {
-    public class StringParseTimeTests
+    public class DurationConverterTests
     {
         [Fact]
-        public void TestStringParseTime()
+        public void TestDurationConverter()
         {
-            // var StringParseTime = new StringParseTime();
+            // var DurationConverter = new DurationConverter();
             Assert.True(false, "Turn the checked value to true to pass this test");
         }
     }

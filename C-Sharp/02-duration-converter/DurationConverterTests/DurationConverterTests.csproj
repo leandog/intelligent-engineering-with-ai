@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\StringParseTime\StringParseTime.csproj" />
+    <ProjectReference Include="..\DurationConverter\DurationConverter.csproj" />
   </ItemGroup>
 
 </Project>
