@@ -24,10 +24,76 @@ namespace FizzBuzz
     public class FizzBuzzTests
     {
         [Fact]
-        public void TestFizzBuzz()
+        public void Given0_ReturnsEmptyArray()
         {
-            // var fizzBuzz = new FizzBuzz();
-            Assert.True(false, "Turn the checked value to true to pass this test");
+            var result = FizzBuzz.GetResults(0);
+            Assert.Empty(result);
+        }
+
+        [Fact]
+        public void Given1_Returns1()
+        {
+            var result = FizzBuzz.GetResults(1);
+            Assert.Equal(["1"], result);
+        }
+
+        [Fact]
+        public void Given3_Returns1_2_Fizz()
+        {
+            var result = FizzBuzz.GetResults(3);
+            Assert.Equal(["1", "2", "Fizz"], result);
+        }
+
+        [Fact]
+        public void Given5_Returns1_2_Fizz_4_Buzz()
+        {
+            var result = FizzBuzz.GetResults(5);
+            Assert.Equal(["1", "2", "Fizz", "4", "Buzz"], result);
+        }
+
+        [Fact]
+        public void Given15_ReturnsFizzBuzzSequence()
+        {
+            var result = FizzBuzz.GetResults(15);
+            Assert.Equal(
+                [
+                    "1",
+                    "2",
+                    "Fizz",
+                    "4",
+                    "Buzz",
+                    "Fizz",
+                    "7",
+                    "8",
+                    "Fizz",
+                    "Buzz",
+                    "11",
+                    "Fizz",
+                    "13",
+                    "14",
+                    "FizzBuzz"
+                ],
+                result
+            );
+        }
+
+        [Fact]
+        public void GivenNegative3_ReturnsEmpty()
+        {
+            var result = FizzBuzz.GetResults(-3);
+            Assert.Equal([], result);
+        }
+
+        [Fact]
+        public void Given100_ReturnsCorrectFizzBuzzSequence()
+        {
+            var result = FizzBuzz.GetResults(100);
+
+            Assert.Equal(100, result.Count);
+            Assert.Equal("Fizz", result[2]);
+            Assert.Equal("Buzz", result[4]);
+            Assert.Equal("FizzBuzz", result[14]);
+            Assert.Equal("Buzz", result[99]);
         }
     }
 }
