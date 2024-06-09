@@ -2,7 +2,8 @@
   "recommendations": [
     "csharpier.csharpier-vscode",
     "formulahendry.dotnet-test-explorer",
-    "github.copilot",
+    "GitHub.copilot-chat",
+    "GitHub.copilot",
     "ms-dotnettools.csdevkit",
     "ms-dotnettools.csharp",
     "ms-vscode.vscode-dotnet-runtime",
