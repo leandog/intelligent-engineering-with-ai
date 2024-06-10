@@ -129,9 +129,22 @@ This detailed morning session ensures participants are introduced to TDD in a pr
      - **B**: Boundaries - Are there special boundary values for the thing?
      - **I**: Interfaces - Are there common interfaces with expectations?
      - **E**: Exceptions/Errors - What cases cause errors? Exactly what should they do?
+   - **Practical Exercise:**
+     - Apply the ZOMBIE testing technique to a simple problem, discussing how to use this approach to identify edge cases and potential issues.
 
-4. **Practical Exercise:**
-   - Apply the ZOMBIE testing technique to a simple problem, discussing how to use this approach to identify edge cases and potential issues.
+4. **Fake it till you make it**
+
+Start with the simplest solution that could possibly work, even if it is just hardcoding the answer. Gradually replace hardcoded parts with real logic as more tests are added and pass.
+
+5. **DRY - Don't Repeat Yourself**
+
+Avoid duplication. Each piece of knowledge must have a single, unambiguous, authoritative representation within a system.
+
+6. **YAGNI**
+
+Implement only what is necessary. Don’t add functionality until it is deemed necessary.
+
+7. **Fake it till you make it**
 
 **Wrap-Up and Q&A (15 minutes)**
 
