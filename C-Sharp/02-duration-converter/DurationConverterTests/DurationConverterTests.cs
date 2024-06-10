@@ -30,10 +30,135 @@ namespace DurationConverter
     public class DurationConverterTests
     {
         [Fact]
-        public void TestDurationConverter()
+        public void Converts_1_Sec_To_1_Second()
         {
-            // var DurationConverter = new DurationConverter();
-            Assert.True(false, "Turn the checked value to true to pass this test");
+            string input = "1 sec";
+            double expected = 1.0;
+
+            double result = DurationConverter.ConvertToSeconds(input);
+
+            Assert.Equal(expected, result);
+        }
+
+        [Fact]
+        public void Converts_Empty_String_To_Zero()
+        {
+            string input = "";
+            double expected = 0.0;
+
+            double result = DurationConverter.ConvertToSeconds(input);
+
+            Assert.Equal(expected, result);
+        }
+
+        [Fact]
+        public void Converts_1_Ms_To_0_001_Seconds()
+        {
+            string input = "1 ms";
+            double expected = 0.001;
+
+            double result = DurationConverter.ConvertToSeconds(input);
+
+            Assert.Equal(expected, result);
+        }
+
+        [Fact]
+        public void Converts_1_Min_To_60_Seconds()
+        {
+            string input = "1 min";
+            double expected = 60.0;
+
+            double result = DurationConverter.ConvertToSeconds(input);
+
+            Assert.Equal(expected, result);
+        }
+
+        [Fact]
+        public void Converts_1_Hr_To_3600_Seconds()
+        {
+            string input = "1 hr";
+            double expected = 3600.0;
+
+            double result = DurationConverter.ConvertToSeconds(input);
+
+            Assert.Equal(expected, result);
+        }
+
+        [Fact]
+        public void Converts_5_Sec_421_Ms_To_5_421_Seconds()
+        {
+            string input = "5 sec 421 ms";
+            double expected = 5.421;
+
+            double result = DurationConverter.ConvertToSeconds(input);
+
+            Assert.Equal(expected, result);
+        }
+
+        [Fact]
+        public void Converts_9_Min_57_Sec_To_597_Seconds()
+        {
+            string input = "9 min 57 sec";
+            double expected = 597.0;
+
+            double result = DurationConverter.ConvertToSeconds(input);
+
+            Assert.Equal(expected, result);
+        }
+
+        [Fact]
+        public void Converts_1_Hr_33_Min_To_5580_Seconds()
+        {
+            string input = "1 hr 33 min";
+            double expected = 5580.0;
+
+            double result = DurationConverter.ConvertToSeconds(input);
+
+            Assert.Equal(expected, result);
+        }
+
+        [Fact]
+        public void Converts_1_Hr_1_Min_1_Sec_111_Ms_To_3661_111_Seconds()
+        {
+            string input = "1 hr 1 min 1 sec 111 ms";
+            double expected = 3661.111;
+
+            double result = DurationConverter.ConvertToSeconds(input);
+
+            Assert.Equal(expected, result);
+        }
+
+        [Fact]
+        public void Converts_0_Sec_To_Zero()
+        {
+            string input = "0 sec";
+            double expected = 0.0;
+
+            double result = DurationConverter.ConvertToSeconds(input);
+
+            Assert.Equal(expected, result);
+        }
+
+        [Fact]
+        public void Converts_Invalid_Input_To_Zero()
+        {
+            string input = "invalid input";
+            double expected = 0.0;
+
+            double result = DurationConverter.ConvertToSeconds(input);
+
+            Assert.Equal(expected, result);
+        }
+
+        [Fact]
+        public void Converts_Mixed_Valid_And_Invalid_Input_To_Zero()
+        {
+            string input = "1 hr 99 minutes";
+            double expected = 3600.0;
+
+            double result = DurationConverter.ConvertToSeconds(input);
+
+            Assert.Equal(expected, result);
         }
     }
 }
