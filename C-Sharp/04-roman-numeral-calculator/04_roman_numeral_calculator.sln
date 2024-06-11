@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanCalculator", "RomanCalculator\RomanCalculator.csproj", "{D1DA0AFE-2785-4103-A187-43AA201754F2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumeralCalculator", "RomanNumeralCalculator\RomanNumeralCalculator.csproj", "{D1DA0AFE-2785-4103-A187-43AA201754F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanCalculatorTests", "RomanCalculatorTests\RomanCalculatorTests.csproj", "{875200C8-AF87-4694-B8B1-B6FC53F3E9C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumeralCalculatorTests", "RomanNumeralCalculatorTests\RomanNumeralCalculatorTests.csproj", "{875200C8-AF87-4694-B8B1-B6FC53F3E9C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

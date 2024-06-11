@@ -2,7 +2,7 @@
 
 ![LeanDog Logo](/Assets/LeanDog-logo.png)
 
-## Roman Calculator Kata
+## Roman Numeral Calculator Kata
 
 ### Problem Description
 
@@ -127,8 +127,8 @@ Implement only what is necessary. Don’t add functionality until it is deemed n
 
 ### Potential Questions to Ask Tyler Morgan
 
-- **Starting with TDD**: "How should I start TDD for the Roman Calculator problem?"
-- **Writing Initial Tests**: "What are some good initial test cases for the Roman Calculator problem?"
-- **Using AI Tools**: "How can I effectively use GitHub Copilot to assist with writing tests for the Roman Calculator?"
-- **Handling Edge Cases**: "What are some edge cases I should consider when writing tests for the Roman Calculator?"
-- **Refactoring Tips**: "How can I refactor my Roman Calculator code to ensure it's clean and maintainable?"
+- **Starting with TDD**: "How should I start TDD for the Roman Numeral Calculator Kata problem?"
+- **Writing Initial Tests**: "What are some good initial test cases for the Roman Numeral Calculator Kata problem?"
+- **Using AI Tools**: "How can I effectively use GitHub Copilot to assist with writing tests for the Roman Numeral Calculator Kata?"
+- **Handling Edge Cases**: "What are some edge cases I should consider when writing tests for the Roman Numeral Calculator Kata?"
+- **Refactoring Tips**: "How can I refactor my Roman Numeral Calculator Kata code to ensure it's clean and maintainable?"

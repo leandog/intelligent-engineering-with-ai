@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RomanCalculator\RomanCalculator.csproj" />
+    <ProjectReference Include="..\RomanNumeralCalculator\RomanNumeralCalculator.csproj" />
   </ItemGroup>
 
 </Project>
