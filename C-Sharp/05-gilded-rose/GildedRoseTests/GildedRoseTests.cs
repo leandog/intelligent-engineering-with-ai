@@ -69,7 +69,7 @@ namespace GildedRose
             };
             GildedRose app = new(Items);
             app.UpdateQuality();
-            Assert.AreEqual("fixme", Items[0].Name);
+            Assert.Equal("fixme", Items[0].Name);
         }
     }
 }
