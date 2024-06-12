@@ -361,9 +361,30 @@ This detailed morning session ensures participants build upon their knowledge fr
      - Applying design patterns
      - Using AI tools effectively
 
+**The Boy Scout Rule and "Make the Change Easy, Then Make the Easy Change" (15 minutes)**
+
+3. **Introduction to the Boy Scout Rule (7 minutes)**
+
+   - **Objective**: Emphasize the importance of continuous improvement in code quality.
+   - **Concept**:
+     - The Boy Scout Rule: "Always leave the code cleaner than you found it."
+     - Importance of small, incremental improvements to prevent code decay.
+   - **Discussion**:
+     - Examples of applying the Boy Scout Rule in daily coding practices.
+     - Benefits of consistent, small refactorings over time.
+
+4. **Introduction to "Make the Change Easy, Then Make the Easy Change" (8 minutes)**
+   - **Objective**: Understand the two-step approach to effective refactoring and feature addition.
+   - **Concept**:
+     - "Make the Change Easy": Refactor the code to make it easier to implement changes.
+     - "Then Make the Easy Change": Implement the actual change after preparing the code.
+   - **Discussion**:
+     - Examples of breaking down complex changes into manageable steps.
+     - How this approach minimizes risks and improves code maintainability.
+
 **Gilded Rose Kata with TDD and AI Tools (2 hours)**
 
-3. **Introduction to the Gilded Rose Kata (15 minutes)**
+5. **Introduction to the Gilded Rose Kata (15 minutes)**
    - Overview of the Gilded Rose problem:
      - Maintain and refactor a piece of legacy code while adding new features.
      - Emphasis on understanding and improving existing code without breaking it.
@@ -371,87 +392,87 @@ This detailed morning session ensures participants build upon their knowledge fr
 
 **Practical Exercise: Gilded Rose Kata with TDD and AI Tools**
 
-4. **Step-by-Step Guide:**
+6. **Step-by-Step Guide:**
 
    **Step 1: Analyze Existing Code (15 minutes)**
 
-   - **Instructor Demonstration:**
+   - **Instructor Demonstration**:
      - Review the current state of the Gilded Rose codebase.
      - Identify areas that need improvement and potential refactoring opportunities.
-   - **Discussion:**
+   - **Discussion**:
      - Highlight the importance of understanding legacy code before making changes.
 
    **Step 2: Write the First Test (Red)**
 
-   - **Instructor Demonstration (20 minutes):**
+   - **Instructor Demonstration (20 minutes)**:
      - Use GitHub Copilot to generate initial test cases for the existing functionality.
      - Discuss how to verify the generated code and ensure it aligns with TDD principles.
 
    **Step 3: Make the Test Pass (Green)**
 
-   - **Instructor Demonstration (15 minutes):**
+   - **Instructor Demonstration (15 minutes)**:
      - Use Copilot to generate the minimal code needed to pass the test.
      - Discuss the manual verification of the code's correctness.
 
    **Step 4: Refactor**
 
-   - **Instructor Demonstration (15 minutes):**
+   - **Instructor Demonstration (15 minutes)**:
      - Refactor the code with the assistance of Copilot to improve readability and maintainability.
      - Ensure the test still passes after refactoring.
 
    **Step 5: Add New Features and Tests**
 
-   - **Instructor Demonstration (20 minutes):**
+   - **Instructor Demonstration (20 minutes)**:
      - Add new features to the Gilded Rose application while ensuring all tests pass.
      - Use the TDD cycle: Red, Green, Refactor for each new feature.
 
-5. **Using ChatGPT as an Assistant (15 minutes)**
+7. **Using ChatGPT as an Assistant (15 minutes)**
 
-   - **Instructor Demonstration:**
+   - **Instructor Demonstration**:
      - Show how ChatGPT can provide explanations and suggestions during the TDD process.
      - Example: Ask ChatGPT to suggest additional test cases or help debug issues.
 
-6. **Hands-On Practice: Pair Programming Exercise (1 hour)**
+8. **Hands-On Practice: Pair Programming Exercise (1 hour)**
    - Participants work in pairs to implement the Gilded Rose kata using TDD and GitHub Copilot.
    - Instructors provide guidance and support, ensuring adherence to TDD practices.
    - Encourage participants to use ChatGPT to clarify doubts and get suggestions.
 
 **Code Smells and Design Patterns (1 hour 30 minutes)**
 
-7. **Introduction to Code Smells (15 minutes)**
+9. **Introduction to Code Smells (15 minutes)**
    - Overview of common code smells:
      - Long methods, large classes, duplicated code, etc.
    - Importance of identifying and addressing code smells for maintainable code.
 
 **Practical Exercise: Identifying Code Smells (15 minutes)**
 
-8. **Step-by-Step Guide:**
+10. **Step-by-Step Guide:**
 
-   **Step 1: Identify Code Smells in Gilded Rose (15 minutes)**
+    **Step 1: Identify Code Smells in Gilded Rose (15 minutes)**
 
-   - **Instructor Demonstration:**
-     - Review the Gilded Rose codebase to identify code smells.
-     - Discuss each identified issue and its implications.
+- **Instructor Demonstration**:
+  - Review the Gilded Rose codebase to identify code smells.
+  - Discuss each identified issue and its implications.
 
-9. **Introduction to Design Patterns (15 minutes)**
-   - Overview of common design patterns:
-     - Singleton, Factory, Strategy, Observer, etc.
-   - Importance of using design patterns for scalable and maintainable code.
+11. **Introduction to Design Patterns (15 minutes)**
+
+- Overview of common design patterns:
+  - Singleton, Factory, Strategy, Observer, etc.
+- Importance of using design patterns for scalable and maintainable code.
 
 **Practical Exercise: Applying Design Patterns (15 minutes)**
 
-10. **Step-by-Step Guide:**
+12. **Step-by-Step Guide:**
 
     **Step 1: Refactor Gilded Rose using Design Patterns (15 minutes)**
 
-- **Instructor Demonstration:**
-  - Refactor parts of the Gilded Rose codebase using appropriate design patterns.
-  - Discuss the benefits and challenges of each pattern.
+    - **Instructor Demonstration**:
+      - Refactor parts of the Gilded Rose codebase using appropriate design patterns.
+      - Discuss the benefits and challenges of each pattern.
 
-11. **Hands-On Practice: Pair Programming Exercise (30 minutes)**
-
-- Participants work in pairs to identify code smells and apply design patterns in the Gilded Rose kata.
-- Instructors provide guidance and support, ensuring best practices are followed.
+13. **Hands-On Practice: Pair Programming Exercise (30 minutes)**
+    - Participants work in pairs to identify code smells and apply design patterns in the Gilded Rose kata.
+    - Instructors provide guidance and support, ensuring best practices are followed.
 
 **Wrap-Up and Q&A (15 minutes)**
 
