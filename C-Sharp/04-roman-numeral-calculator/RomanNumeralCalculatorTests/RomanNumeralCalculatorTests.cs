@@ -1,70 +1,100 @@
-/*
-# Three Laws of Test Driven Development
-- You are not allowed to write any production code unless it is to make a failing unit test pass.
-- You are not allowed to write any more of a unit test than is sufficient to fail; and compilation failures are failures.
-- You are not allowed to write any more production code than is sufficient to pass the one failing unit test.
-*/
-
-/*
-Fake it till you make it
-*/
-
-/*
-# ZOMBIES
-- Z: Zero - What happens if there are zero of a thing?
-- O: One - What happens when there is exactly one of a thing?
-- M: Many - What happens when there are more than one thing?
-- B: Boundaries - Are there special boundary values for the thing?
-- I: Interfaces - Are there common interfaces with expectations?
-- E: Exceptions/Errors - What cases cause errors? Exactly what should they do?
-*/
-
-/*
-S - Single Responsibility Principle
-O - Open / Closed => Open for extension, closed for modification
-L - Liskov Substitution => shape.area :: rectangle.area : square.area : circle.area
-I - Interface Segregation
-D - Dependency Inversion
-*/
-
-/*
-D - Don't
-R - Repeat
-Y - Yourself
-*/
-
-/*
-Y - You
-A - Ain't
-G - Gonna
-N - Need
-I - It
-*/
-
-/*
-PROBLEM REQUIREMENTS:
-
-“As a Roman Bookkeeper, I want to add Roman numbers because doing it manually is too tedious.” Given the Roman numerals (I, V, X, L, C, D, M which represent one, five, ten, fifty, hundred, five hundred, and a thousand respectively), create two numbers and add them. As we are in Rome, there is no such thing as decimals or integers; we need to do this with strings. An example would be “XIV” + “LX” = “LXXIV”.
-
-**Rules for Roman Numerals:**
-
-- Numerals can be concatenated to form a larger numeral (“XX” + “II” = “XXII”).
-- If a lesser numeral is put before a bigger one, it means subtraction of the lesser from the bigger (“IV” means four, “CM” means nine hundred).
-- If the numeral is I, X, or C, you can’t have more than three in a row (“IIII” is invalid).
-- If the numeral is V, L, or D, you can’t have more than one in a row (“VV” is invalid).
-*/
-
 using Xunit;
 
 namespace RomanNumeralCalculator
 {
     public class RomanNumeralCalculatorTests
     {
-        [Fact]
-        public void TestRomanNumeralCalculator()
+        private readonly RomanNumeralCalculator calculator;
+
+        public RomanNumeralCalculatorTests()
         {
-            // var RomanNumeralCalculator = new RomanNumeralCalculator();
-            Assert.True(false, "Turn the checked value to true to pass this test");
+            calculator = new RomanNumeralCalculator();
+        }
+
+        [Fact]
+        public void AddsTwoSingleRomanNumerals()
+        {
+            var result = RomanNumeralCalculator.Add("I", "I");
+            Assert.Equal("II", result);
+        }
+
+        [Fact]
+        public void AddsRomanNumeralsWithSubtraction()
+        {
+            var result = RomanNumeralCalculator.Add("IV", "I");
+            Assert.Equal("V", result);
+        }
+
+        [Fact]
+        public void AddsComplexRomanNumerals()
+        {
+            var result = RomanNumeralCalculator.Add("IX", "II");
+            Assert.Equal("XI", result);
+        }
+
+        [Fact]
+        public void AddsLargeAndSmallRomanNumerals()
+        {
+            var result = RomanNumeralCalculator.Add("M", "I");
+            Assert.Equal("MI", result);
+        }
+
+        [Fact]
+        public void AddsNonSubtractiveRomanNumerals()
+        {
+            var result = RomanNumeralCalculator.Add("X", "V");
+            Assert.Equal("XV", result);
+        }
+
+        [Fact]
+        public void AddsRomanNumeralsToComplexResult()
+        {
+            var result = RomanNumeralCalculator.Add("XL", "X");
+            Assert.Equal("L", result);
+        }
+
+        [Fact]
+        public void AddsMultipleRomanNumerals()
+        {
+            var result = RomanNumeralCalculator.Add("X", "X");
+            result = RomanNumeralCalculator.Add(result, "X");
+            Assert.Equal("XXX", result);
+        }
+
+        [Fact]
+        public void HandlesEmptyStrings()
+        {
+            var result = RomanNumeralCalculator.Add("", "I");
+            Assert.Equal("I", result);
+        }
+
+        [Fact]
+        public void HandlesInvalidCharacters()
+        {
+            var result = RomanNumeralCalculator.Add("A", "I");
+            Assert.Equal("Invalid Input", result);
+        }
+
+        [Fact]
+        public void AddsThatResultsInSubtractionNumeral()
+        {
+            var result = RomanNumeralCalculator.Add("X", "IV");
+            Assert.Equal("XIV", result);
+        }
+
+        [Fact]
+        public void AddsMoreThanTwoNumerals()
+        {
+            var result = RomanNumeralCalculator.Add("I", "II");
+            result = RomanNumeralCalculator.Add(result, "III");
+            Assert.Equal("VI", result);
+        }
+
+        [Fact]
+        public void AddsLargeNumerals()
+        {
+            var result = RomanNumeralCalculator.Add("D", "D");
+            Assert.Equal("M", result);
         }
     }
 }
