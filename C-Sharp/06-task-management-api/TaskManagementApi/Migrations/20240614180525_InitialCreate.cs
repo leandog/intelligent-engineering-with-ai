@@ -12,7 +12,7 @@ namespace TaskManagementApi.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Tasks",
+                name: "TaskItems",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
@@ -24,7 +24,7 @@ namespace TaskManagementApi.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Tasks", x => x.Id);
+                    table.PrimaryKey("PK_TaskItems", x => x.Id);
                 });
         }
 
@@ -32,7 +32,7 @@ namespace TaskManagementApi.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Tasks");
+                name: "TaskItems");
         }
     }
 }

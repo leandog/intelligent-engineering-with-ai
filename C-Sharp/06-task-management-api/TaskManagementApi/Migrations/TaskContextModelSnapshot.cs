@@ -39,7 +39,7 @@ namespace TaskManagementApi.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Tasks");
+                    b.ToTable("TaskItems");
                 });
 #pragma warning restore 612, 618
         }

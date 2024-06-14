@@ -78,3 +78,17 @@ Navigate to the test project directory and run the tests using xUnit:
 cd TaskManagementApi.Tests
 dotnet test
 ```
+
+##### Viewing Coverage
+
+To run coverage with report generator install `dotnet-reportgenerator-globaltool` globally
+
+```sh
+dotnet tool install --global dotnet-reportgenerator-globaltool
+```
+
+Run the `run-tests-with-coverage.sh` file:
+
+```sh
+./run-tests-with-coverage.sh
+```

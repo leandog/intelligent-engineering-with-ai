@@ -10,38 +10,34 @@ namespace TaskManagementApi.Repositories
 
         public async Task<IEnumerable<TaskItem>> GetAllTasks()
         {
-            return await context.Tasks.ToListAsync();
+            return await context.TaskItems.ToListAsync();
         }
 
         public async Task<TaskItem> GetTaskById(int id)
         {
-            var task = await context.Tasks.FindAsync(id) ?? throw new TaskNotFoundException(id);
-            return task;
+            var taskItem =
+                await context.TaskItems.FindAsync(id) ?? throw new TaskNotFoundException(id);
+            return taskItem;
         }
 
-        public async Task<TaskItem> AddTask(TaskItem task)
+        public async Task<TaskItem> AddTask(TaskItem taskItem)
         {
-            context.Tasks.Add(task);
+            context.TaskItems.Add(taskItem);
             await context.SaveChangesAsync();
-            return task;
+            return taskItem;
         }
 
-        public async Task<TaskItem> UpdateTask(TaskItem task)
+        public async Task<TaskItem> UpdateTask(TaskItem taskItem)
         {
-            context.Entry(task).State = EntityState.Modified;
+            context.Entry(taskItem).State = EntityState.Modified;
             await context.SaveChangesAsync();
-            return task;
+            return taskItem;
         }
 
         public async Task<bool> DeleteTask(int id)
         {
-            var task = await context.Tasks.FindAsync(id);
-            if (task == null)
-            {
-                return false;
-            }
-
-            context.Tasks.Remove(task);
+            var taskItem = await GetTaskById(id);
+            context.TaskItems.Remove(taskItem);
             await context.SaveChangesAsync();
             return true;
         }

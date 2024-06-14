@@ -1,3 +1,5 @@
 # Ignore all .db files
 *.db
 *.db-*
+
+coveragereport

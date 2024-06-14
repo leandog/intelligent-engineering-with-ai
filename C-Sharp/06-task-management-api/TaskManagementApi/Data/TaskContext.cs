@@ -5,6 +5,6 @@ namespace TaskManagementApi.Data
 {
     public class TaskContext(DbContextOptions<TaskContext> options) : DbContext(options)
     {
-        public DbSet<TaskItem> Tasks { get; set; }
+        public DbSet<TaskItem> TaskItems { get; set; }
     }
 }
