@@ -57,44 +57,9 @@ The project is created using the dotnet CLI. Use the following command to build 
 dotnet test
 ```
 
-### TDD Cycle
-
-1. **Red**: Write a failing test case that defines a function or feature.
-2. **Green**: Write just enough code to make the test pass.
-3. **Refactor**: Clean up the code, ensuring that all tests still pass.
-
-### Fake it till you make it
-
-Start with the simplest solution that could possibly work, even if it is just hardcoding the answer. Gradually replace hardcoded parts with real logic as more tests are added and pass.
-
-### ZOMBIES
-
-Use the ZOMBIES acronym to guide your test cases:
-
-- **Z: Zero** - What happens if there are zero of a thing?
-- **O: One** - What happens when there is exactly one of a thing?
-- **M: Many** - What happens when there are more than one thing?
-- **B: Boundaries** - Are there special boundary values for the thing?
-- **I: Interfaces** - Are there common interfaces with expectations?
-- **E: Exceptions/Errors** - What cases cause errors? Exactly what should they do?
-
-### SOLID Principles
-
-Follow the SOLID principles to create maintainable and scalable code:
-
-- **S: Single Responsibility Principle** - A class should have one and only one reason to change.
-- **O: Open/Closed Principle** - Software entities should be open for extension, but closed for modification.
-- **L: Liskov Substitution Principle** - Objects of a superclass should be replaceable with objects of its subclasses without breaking the application.
-- **I: Interface Segregation Principle** - No client should be forced to depend on methods it does not use.
-- **D: Dependency Inversion Principle** - High-level modules should not depend on low-level modules. Both should depend on abstractions.
-
-### DRY - Don't Repeat Yourself
-
-Avoid duplication. Each piece of knowledge must have a single, unambiguous, authoritative representation within a system.
-
-### YAGNI - You Ain't Gonna Need It
-
-Implement only what is necessary. Don’t add functionality until it is deemed necessary.
+```bash
+dotnet test --collect:"XPlat Code Coverage"
+```
 
 ### Boy Scout Rule
 
@@ -153,7 +118,7 @@ Before making a significant change, refactor the code to make the upcoming chang
 
 ### Potential Questions to Ask Tyler Morgan
 
-- **Starting with TDD**: "How should I start TDD for the Gilded Rose Kata problem?"
+- **Starting with TDD**: "How can I write unit tests for the Gilded Rose Kata problem?"
 - **Writing Initial Tests**: "What are some good initial test cases for the Gilded Rose Kata problem?"
 - **Using AI Tools**: "How can I effectively use GitHub Copilot to assist with writing tests for the Gilded Rose Kata?"
 - **Handling Edge Cases**: "What are some edge cases I should consider when writing tests for the Gilded Rose Kata?"

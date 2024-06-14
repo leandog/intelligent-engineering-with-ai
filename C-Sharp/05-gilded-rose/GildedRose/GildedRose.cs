@@ -1,8 +1,8 @@
 ﻿namespace GildedRose
 {
-    public class GildedRose(IList<Item> Items)
+    public class GildedRose(List<Item> Items)
     {
-        readonly IList<Item> Items = Items;
+        readonly List<Item> Items = Items;
 
         public void UpdateQuality()
         {
