@@ -1,55 +1,54 @@
-using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
-using Task = TaskManagementApi.Models.Task;
+using Microsoft.EntityFrameworkCore;
 using TaskManagementApi.Data;
 using TaskManagementApi.Models;
+using Task = TaskManagementApi.Models.Task;
 
 namespace TaskManagementApi.Repositories
 {
-    public class TaskRepository : ITaskRepository
+    public class TaskRepository(TaskContext context) : ITaskRepository
     {
-        private readonly TaskContext _context;
-
-        public TaskRepository(TaskContext context)
-        {
-            _context = context;
-        }
+        private readonly TaskContext context = context;
 
         public async Task<IEnumerable<Task>> GetAllTasks()
         {
-            return await _context.Tasks.ToListAsync();
+            return await context.Tasks.ToListAsync();
         }
 
         public async Task<Task> GetTaskById(int id)
         {
-            return await _context.Tasks.FindAsync(id);
+            var task = await context.Tasks.FindAsync(id) ?? throw new TaskNotFoundException(id);
+            return task;
         }
 
         public async Task<Task> AddTask(Task task)
         {
-            _context.Tasks.Add(task);
-            await _context.SaveChangesAsync();
+            context.Tasks.Add(task);
+            await context.SaveChangesAsync();
             return task;
         }
 
         public async Task<Task> UpdateTask(Task task)
         {
-            _context.Entry(task).State = EntityState.Modified;
-            await _context.SaveChangesAsync();
+            context.Entry(task).State = EntityState.Modified;
+            await context.SaveChangesAsync();
             return task;
         }
 
         public async Task<bool> DeleteTask(int id)
         {
-            var task = await _context.Tasks.FindAsync(id);
+            var task = await context.Tasks.FindAsync(id);
             if (task == null)
             {
                 return false;
             }
 
-            _context.Tasks.Remove(task);
-            await _context.SaveChangesAsync();
+            context.Tasks.Remove(task);
+            await context.SaveChangesAsync();
             return true;
         }
     }
+
+    public class TaskNotFoundException(int taskId)
+        : Exception($"Task with id {taskId} not found") { }
 }

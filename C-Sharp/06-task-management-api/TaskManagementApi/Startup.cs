@@ -6,14 +6,9 @@ using Microsoft.OpenApi.Models;
 
 namespace TaskManagementApi
 {
-    public class Startup
+    public class Startup(IConfiguration configuration)
     {
-        public IConfiguration Configuration { get; }
-
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
+        public IConfiguration Configuration { get; } = configuration;
 
         public void ConfigureServices(IServiceCollection services)
         {
@@ -38,19 +33,14 @@ namespace TaskManagementApi
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "TaskManagementApi v1"));
 
                 // Apply migrations automatically during development
-                using (var scope = app.ApplicationServices.CreateScope())
-                {
-                    var dbContext = scope.ServiceProvider.GetRequiredService<TaskContext>();
-                    dbContext.Database.Migrate();
-                }
+                using var scope = app.ApplicationServices.CreateScope();
+                var dbContext = scope.ServiceProvider.GetRequiredService<TaskContext>();
+                dbContext.Database.Migrate();
             }
 
             app.UseHttpsRedirection();
-
             app.UseRouting();
-
             app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
