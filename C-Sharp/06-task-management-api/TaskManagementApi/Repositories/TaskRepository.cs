@@ -1,8 +1,6 @@
-using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using TaskManagementApi.Data;
 using TaskManagementApi.Models;
-using Task = TaskManagementApi.Models.Task;
 
 namespace TaskManagementApi.Repositories
 {
@@ -10,25 +8,25 @@ namespace TaskManagementApi.Repositories
     {
         private readonly TaskContext context = context;
 
-        public async Task<IEnumerable<Task>> GetAllTasks()
+        public async Task<IEnumerable<TaskItem>> GetAllTasks()
         {
             return await context.Tasks.ToListAsync();
         }
 
-        public async Task<Task> GetTaskById(int id)
+        public async Task<TaskItem> GetTaskById(int id)
         {
             var task = await context.Tasks.FindAsync(id) ?? throw new TaskNotFoundException(id);
             return task;
         }
 
-        public async Task<Task> AddTask(Task task)
+        public async Task<TaskItem> AddTask(TaskItem task)
         {
             context.Tasks.Add(task);
             await context.SaveChangesAsync();
             return task;
         }
 
-        public async Task<Task> UpdateTask(Task task)
+        public async Task<TaskItem> UpdateTask(TaskItem task)
         {
             context.Entry(task).State = EntityState.Modified;
             await context.SaveChangesAsync();

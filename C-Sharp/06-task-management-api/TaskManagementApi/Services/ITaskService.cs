@@ -1,13 +1,13 @@
-using Task = TaskManagementApi.Models.Task;
+using TaskManagementApi.Models;
 
 namespace TaskManagementApi.Services
 {
     public interface ITaskService
     {
-        Task<IEnumerable<Task>> GetAllTasks();
-        Task<Task> GetTaskById(int id);
-        Task<Task> AddTask(Task task);
-        Task<Task> UpdateTask(Task task);
+        Task<IEnumerable<TaskItem>> GetAllTasks();
+        Task<TaskItem> GetTaskById(int id);
+        Task<TaskItem> AddTask(TaskItem task);
+        Task<TaskItem> UpdateTask(TaskItem task);
         Task<bool> DeleteTask(int id);
     }
 }

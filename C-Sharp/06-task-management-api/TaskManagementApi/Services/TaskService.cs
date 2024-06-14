@@ -1,5 +1,5 @@
+using TaskManagementApi.Models;
 using TaskManagementApi.Repositories;
-using Task = TaskManagementApi.Models.Task;
 
 namespace TaskManagementApi.Services
 {
@@ -7,22 +7,22 @@ namespace TaskManagementApi.Services
     {
         private readonly ITaskRepository taskRepository = taskRepository;
 
-        public async Task<IEnumerable<Task>> GetAllTasks()
+        public async Task<IEnumerable<TaskItem>> GetAllTasks()
         {
             return await taskRepository.GetAllTasks();
         }
 
-        public async Task<Task> GetTaskById(int id)
+        public async Task<TaskItem> GetTaskById(int id)
         {
             return await taskRepository.GetTaskById(id);
         }
 
-        public async Task<Task> AddTask(Task task)
+        public async Task<TaskItem> AddTask(TaskItem task)
         {
             return await taskRepository.AddTask(task);
         }
 
-        public async Task<Task> UpdateTask(Task task)
+        public async Task<TaskItem> UpdateTask(TaskItem task)
         {
             return await taskRepository.UpdateTask(task);
         }

@@ -11,7 +11,7 @@ using TaskManagementApi.Data;
 namespace TaskManagementApi.Migrations
 {
     [DbContext(typeof(TaskContext))]
-    [Migration("20240614060559_InitialCreate")]
+    [Migration("20240614165552_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -20,7 +20,7 @@ namespace TaskManagementApi.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.6");
 
-            modelBuilder.Entity("TaskManagementApi.Models.Task", b =>
+            modelBuilder.Entity("TaskManagementApi.Models.TaskItem", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
