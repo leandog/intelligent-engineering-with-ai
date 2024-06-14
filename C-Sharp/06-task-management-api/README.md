@@ -87,8 +87,11 @@ To run coverage with report generator install `dotnet-reportgenerator-globaltool
 dotnet tool install --global dotnet-reportgenerator-globaltool
 ```
 
-Run the `run-tests-with-coverage.sh` file:
+Run the `run-tests-with-coverage` file:
 
 ```sh
+# mac/linux
 ./run-tests-with-coverage.sh
+# windows
+./run-tests-with-coverage.ps1
 ```
