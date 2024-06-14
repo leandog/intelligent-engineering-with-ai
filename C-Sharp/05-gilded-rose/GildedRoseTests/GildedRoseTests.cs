@@ -1,75 +1,72 @@
-/*
-# Three Laws of Test Driven Development
-- You are not allowed to write any production code unless it is to make a failing unit test pass.
-- You are not allowed to write any more of a unit test than is sufficient to fail; and compilation failures are failures.
-- You are not allowed to write any more production code than is sufficient to pass the one failing unit test.
-*/
-
-/*
-Fake it till you make it
-*/
-
-/*
-# ZOMBIES
-Z - Zero
-O - One
-M - Many
-B - Boundary Behavior
-I - Interface Definition
-E - Exercise Exception Behavior
-S - Simple
-*/
-
-/*
-S - Single Responsibility Principle
-O - Open / Closed => Open for extension, closed for modification
-L - Liskov Substitution => shape.area :: rectangle.area : square.area : circle.area
-I - Interface Segregation
-D - Dependency Inversion
-*/
-
-/*
-D - Don't
-R - Repeat
-Y - Yourself
-*/
-
-/*
-Y - You
-A - Ain't
-G - Gonna
-N - Need
-I - It
-*/
-
-/*
-Boy Scout Rule - leave the code better than you found it
-*/
-
-/*
-Make the Change Easy, Then Make the Easy Change
-*/
+using System.Collections.Generic;
 using Xunit;
 
 namespace GildedRose
 {
     public class GildedRoseTests
     {
-        [Fact]
-        public void TestGildedRose()
+        [Theory]
+        [InlineData("Potion", 10, 10, 9, 9)]
+        [InlineData("Potion", 0, 10, -1, 8)]
+        [InlineData("Potion", -1, 0, -2, 0)]
+        [InlineData("Potion", -1, -1, -2, -1)]
+        [InlineData("Aged Brie", 5, 50, 4, 50)]
+        [InlineData("Aged Brie", 2, 0, 1, 1)]
+        [InlineData("Aged Brie", 0, 0, -1, 2)]
+        [InlineData("Sulfuras, Hand of Ragnaros", 5, 50, 5, 50)]
+        [InlineData("Sulfuras, Hand of Ragnaros", 0, 50, 0, 50)]
+        [InlineData("Sulfuras, Hand of Ragnaros", -1, 50, -1, 50)]
+        [InlineData("Backstage passes to a TAFKAL80ETC concert", 0, 10, -1, 0)]
+        [InlineData("Backstage passes to a TAFKAL80ETC concert", 1, 10, 0, 13)]
+        [InlineData("Backstage passes to a TAFKAL80ETC concert", 15, 10, 14, 11)]
+        public void TestAgedBrieQuality(
+            string itemName,
+            int initialSellIn,
+            int initialQuality,
+            int expectedSellIn,
+            int expectedQuality
+        )
         {
-            var Items = new List<Item>
+            AssertItem(itemName, initialSellIn, initialQuality, expectedSellIn, expectedQuality);
+        }
+
+        [Theory]
+        [InlineData(5, 2, 4, 0)]
+        [InlineData(0, 4, -1, 0)]
+        [InlineData(0, 0, -1, 0)]
+        public void TestConjuredItem(
+            int initialSellIn,
+            int initialQuality,
+            int expectedSellIn,
+            int expectedQuality
+        )
+        {
+            AssertItem("Conjured", initialSellIn, initialQuality, expectedSellIn, expectedQuality);
+        }
+
+        private static void AssertItem(
+            string itemName,
+            int initialSellIn,
+            int initialQuality,
+            int expectedSellIn,
+            int expectedQuality
+        )
+        {
+            var items = new List<Item>
             {
                 new()
                 {
-                    Name = "foo",
-                    SellIn = 0,
-                    Quality = 0
+                    Name = itemName,
+                    SellIn = initialSellIn,
+                    Quality = initialQuality
                 }
             };
-            GildedRose app = new(Items);
+            var app = new GildedRose(items);
+
             app.UpdateQuality();
-            Assert.Equal("fixme", Items[0].Name);
+
+            Assert.Equal(expectedSellIn, items[0].SellIn);
+            Assert.Equal(expectedQuality, items[0].Quality);
         }
     }
 }
