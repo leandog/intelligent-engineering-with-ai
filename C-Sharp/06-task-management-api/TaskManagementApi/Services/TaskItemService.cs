@@ -24,7 +24,8 @@ namespace TaskManagementApi.Services
 
         public async Task<TaskItem> UpdateTaskItem(TaskItem task)
         {
-            return await taskItemRepository.UpdateTaskItem(task);
+            var taskItemToUpdate = await GetTaskItemById(task.Id);
+            return await taskItemRepository.UpdateTaskItem(taskItemToUpdate);
         }
 
         public async Task<bool> DeleteTaskItem(int id)

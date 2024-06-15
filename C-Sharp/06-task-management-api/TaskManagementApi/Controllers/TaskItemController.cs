@@ -12,7 +12,7 @@ namespace TaskManagementApi.Controllers
         private readonly ITaskItemService taskService = taskService;
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TaskItem>>> GetAllTasks()
+        public async Task<ActionResult<IEnumerable<TaskItem>>> GetAllTaskItems()
         {
             var taskItems = await taskService.GetAllTaskItems();
             return Ok(taskItems);
@@ -23,8 +23,8 @@ namespace TaskManagementApi.Controllers
         {
             try
             {
-                var task = await taskService.GetTaskItemById(id);
-                return Ok(task);
+                var taskItem = await taskService.GetTaskItemById(id);
+                return Ok(taskItem);
             }
             catch (TaskItemNotFoundException e)
             {
@@ -33,40 +33,47 @@ namespace TaskManagementApi.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<TaskItem>> CreateTask(TaskItem task)
+        public async Task<ActionResult<TaskItem>> CreateTaskItem(TaskItem taskItem)
         {
-            var createdTask = await taskService.AddTaskItem(task);
+            var createdTaskItem = await taskService.AddTaskItem(taskItem);
             return CreatedAtAction(
                 nameof(GetTaskItemById),
-                new { id = createdTask.Id },
-                createdTask
+                new { id = createdTaskItem.Id },
+                createdTaskItem
             );
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateTask(int id, TaskItem task)
+        public async Task<IActionResult> UpdateTask(int id, TaskItem taskItem)
         {
-            if (id != task.Id)
+            if (id != taskItem.Id)
             {
                 return BadRequest();
             }
-            var updatedTask = await taskService.UpdateTaskItem(task);
-            if (updatedTask == null)
+
+            try
             {
-                return NotFound();
+                var updatedTaskItem = await taskService.UpdateTaskItem(taskItem);
+                return Ok(taskItem);
             }
-            return Ok(updatedTask);
+            catch (TaskItemNotFoundException e)
+            {
+                return NotFound(e.Message);
+            }
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteTask(int id)
         {
-            var isDeleted = await taskService.DeleteTaskItem(id);
-            if (!isDeleted)
+            try
             {
-                return NotFound();
+                await taskService.DeleteTaskItem(id);
+                return NoContent();
             }
-            return NoContent();
+            catch (TaskItemNotFoundException e)
+            {
+                return NotFound(e.Message);
+            }
         }
     }
 }
