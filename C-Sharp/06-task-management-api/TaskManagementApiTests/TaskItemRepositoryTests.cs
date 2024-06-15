@@ -2,43 +2,43 @@ using Microsoft.EntityFrameworkCore;
 using TaskManagementApi.Data;
 using TaskManagementApi.Models;
 using TaskManagementApi.Repositories;
-using TaskStatus = TaskManagementApi.Models.TaskStatus;
+using TaskItemStatus = TaskManagementApi.Models.TaskItemStatus;
 
 namespace TaskManagementApiTests
 {
-    public class TaskRepositoryTests : IClassFixture<TaskContextFixture>
+    public class TaskItemRepositoryTests : IClassFixture<TaskItemContextFixture>
     {
-        private readonly TaskContext context;
-        private readonly TaskRepository repository;
+        private readonly TaskItemContext context;
+        private readonly TaskItemRepository repository;
 
-        public TaskRepositoryTests(TaskContextFixture fixture)
+        public TaskItemRepositoryTests(TaskItemContextFixture taskItemContextFixture)
         {
-            context = fixture.Context;
+            context = taskItemContextFixture.Context;
             context.TaskItems.RemoveRange(context.TaskItems);
             context.SaveChanges();
 
-            repository = new TaskRepository(context);
+            repository = new TaskItemRepository(context);
         }
 
         [Fact]
-        public async Task AddTask_ShouldAddTask()
+        public async Task AddTaskItem_ShouldAddTaskItem()
         {
             var taskItem = new TaskItem
             {
                 Title = "Test Task",
                 Description = "Test Description",
                 DueDate = DateTime.Now,
-                Status = TaskStatus.Pending
+                Status = TaskItemStatus.Pending
             };
 
-            var result = await repository.AddTask(taskItem);
+            var result = await repository.AddTaskItem(taskItem);
 
             Assert.NotNull(result);
             Assert.Equal(taskItem.Title, result.Title);
         }
 
         [Fact]
-        public async Task GetAllTasks_ShouldReturnAllTasks()
+        public async Task GetAllTaskItems_ShouldReturnAllTaskItems()
         {
             context.TaskItems.AddRange(
                 new List<TaskItem>
@@ -48,81 +48,81 @@ namespace TaskManagementApiTests
                         Title = "Task 1",
                         Description = "Description 1",
                         DueDate = DateTime.Now,
-                        Status = TaskStatus.Pending
+                        Status = TaskItemStatus.Pending
                     },
                     new()
                     {
                         Title = "Task 2",
                         Description = "Description 2",
                         DueDate = DateTime.Now,
-                        Status = TaskStatus.InProgress
+                        Status = TaskItemStatus.InProgress
                     }
                 }
             );
             await context.SaveChangesAsync();
 
-            var result = await repository.GetAllTasks();
+            var result = await repository.GetAllTaskItems();
 
             Assert.Equal(2, result.Count());
         }
 
         [Fact]
-        public async Task GetTaskById_ShouldReturnTask()
+        public async Task GetTaskItemById_ShouldReturnTaskItem()
         {
             var taskItem = new TaskItem
             {
                 Title = "Task 1",
                 Description = "Description 1",
                 DueDate = DateTime.Now,
-                Status = TaskStatus.Pending
+                Status = TaskItemStatus.Pending
             };
             context.TaskItems.Add(taskItem);
             await context.SaveChangesAsync();
 
-            var result = await repository.GetTaskById(taskItem.Id);
+            var result = await repository.GetTaskItemById(taskItem.Id);
 
             Assert.NotNull(result);
             Assert.Equal(taskItem.Title, result.Title);
         }
 
         [Fact]
-        public async Task UpdateTask_ShouldUpdateTask()
+        public async Task UpdateTaskItem_ShouldUpdateTaskItem()
         {
             var taskItem = new TaskItem
             {
                 Title = "Task 1",
                 Description = "Description 1",
                 DueDate = DateTime.Now,
-                Status = TaskStatus.Pending
+                Status = TaskItemStatus.Pending
             };
             context.TaskItems.Add(taskItem);
             await context.SaveChangesAsync();
 
             taskItem.Title = "Updated Task";
-            var result = await repository.UpdateTask(taskItem);
+            var result = await repository.UpdateTaskItem(taskItem);
 
             Assert.NotNull(result);
             Assert.Equal("Updated Task", result.Title);
         }
 
         [Fact]
-        public async Task DeleteTask_ShouldDeleteTask()
+        public async Task DeleteTaskItem_ShouldDeleteTaskItem()
         {
             var taskItem = new TaskItem
             {
                 Title = "Task 1",
                 Description = "Description 1",
                 DueDate = DateTime.Now,
-                Status = TaskStatus.Pending
+                Status = TaskItemStatus.Pending
             };
             context.TaskItems.Add(taskItem);
             await context.SaveChangesAsync();
 
-            var result = await repository.DeleteTask(taskItem.Id);
+            var result = await repository.DeleteTaskItem(taskItem.Id);
 
             Assert.True(result);
-            await Assert.ThrowsAsync<TaskNotFoundException>(
-                () => repository.GetTaskById(taskItem.Id)
+            await Assert.ThrowsAsync<TaskItemNotFoundException>(
+                () => repository.GetTaskItemById(taskItem.Id)
             );
         }
     }

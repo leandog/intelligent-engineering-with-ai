@@ -9,7 +9,7 @@ using TaskManagementApi.Data;
 
 namespace TaskManagementApi.Migrations
 {
-    [DbContext(typeof(TaskContext))]
+    [DbContext(typeof(TaskItemContext))]
     partial class TaskContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

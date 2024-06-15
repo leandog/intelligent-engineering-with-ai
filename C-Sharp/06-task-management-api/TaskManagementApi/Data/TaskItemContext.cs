@@ -3,7 +3,7 @@ using TaskManagementApi.Models;
 
 namespace TaskManagementApi.Data
 {
-    public class TaskContext(DbContextOptions<TaskContext> options) : DbContext(options)
+    public class TaskItemContext(DbContextOptions<TaskItemContext> options) : DbContext(options)
     {
         public DbSet<TaskItem> TaskItems { get; set; }
     }

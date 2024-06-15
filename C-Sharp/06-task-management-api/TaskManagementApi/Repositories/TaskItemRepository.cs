@@ -4,45 +4,45 @@ using TaskManagementApi.Models;
 
 namespace TaskManagementApi.Repositories
 {
-    public class TaskRepository(TaskContext context) : ITaskRepository
+    public class TaskItemRepository(TaskItemContext context) : ITaskItemRepository
     {
-        private readonly TaskContext context = context;
+        private readonly TaskItemContext context = context;
 
-        public async Task<IEnumerable<TaskItem>> GetAllTasks()
+        public async Task<IEnumerable<TaskItem>> GetAllTaskItems()
         {
             return await context.TaskItems.ToListAsync();
         }
 
-        public async Task<TaskItem> GetTaskById(int id)
+        public async Task<TaskItem> GetTaskItemById(int id)
         {
             var taskItem =
-                await context.TaskItems.FindAsync(id) ?? throw new TaskNotFoundException(id);
+                await context.TaskItems.FindAsync(id) ?? throw new TaskItemNotFoundException(id);
             return taskItem;
         }
 
-        public async Task<TaskItem> AddTask(TaskItem taskItem)
+        public async Task<TaskItem> AddTaskItem(TaskItem taskItem)
         {
             context.TaskItems.Add(taskItem);
             await context.SaveChangesAsync();
             return taskItem;
         }
 
-        public async Task<TaskItem> UpdateTask(TaskItem taskItem)
+        public async Task<TaskItem> UpdateTaskItem(TaskItem taskItem)
         {
             context.Entry(taskItem).State = EntityState.Modified;
             await context.SaveChangesAsync();
             return taskItem;
         }
 
-        public async Task<bool> DeleteTask(int id)
+        public async Task<bool> DeleteTaskItem(int id)
         {
-            var taskItem = await GetTaskById(id);
+            var taskItem = await GetTaskItemById(id);
             context.TaskItems.Remove(taskItem);
             await context.SaveChangesAsync();
             return true;
         }
     }
 
-    public class TaskNotFoundException(int taskId)
-        : Exception($"Task with id {taskId} not found") { }
+    public class TaskItemNotFoundException(int taskId)
+        : Exception($"Task Item with id {taskId} not found") { }
 }

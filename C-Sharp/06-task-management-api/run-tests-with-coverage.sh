@@ -1,10 +1,12 @@
 #!/bin/bash
 
+rm -rf TaskManagementApiTests/TestResults
+
 # Run tests and collect coverage
-dotnet test --collect:"XPlat Code Coverage"
+dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:Exclude="[TaskManagementApi]*TaskManagementApi.Migrations.*"
 
 # Find the latest coverage file
-coverageFile=$(find . -name coverage.cobertura.xml | sort | tail -n 1)
+coverageFile=$(find . -name coverage.cobertura.xml)
 
 if [ -z "$coverageFile" ]; then
     echo "Coverage file not found!"

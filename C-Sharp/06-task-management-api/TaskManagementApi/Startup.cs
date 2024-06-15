@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 using TaskManagementApi.Data;
 using TaskManagementApi.Repositories;
 using TaskManagementApi.Services;
-using Microsoft.OpenApi.Models;
 
 namespace TaskManagementApi
 {
@@ -13,11 +13,12 @@ namespace TaskManagementApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddDbContext<TaskContext>(options =>
-                options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddScoped<ITaskRepository, TaskRepository>();
-            services.AddScoped<ITaskService, TaskService>();
-            
+            services.AddDbContext<TaskItemContext>(options =>
+                options.UseSqlite(Configuration.GetConnectionString("DefaultConnection"))
+            );
+            services.AddScoped<ITaskItemRepository, TaskItemRepository>();
+            services.AddScoped<ITaskItemService, TaskItemService>();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "TaskManagementApi", Version = "v1" });
@@ -30,11 +31,13 @@ namespace TaskManagementApi
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "TaskManagementApi v1"));
+                app.UseSwaggerUI(c =>
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "TaskManagementApi v1")
+                );
 
                 // Apply migrations automatically during development
                 using var scope = app.ApplicationServices.CreateScope();
-                var dbContext = scope.ServiceProvider.GetRequiredService<TaskContext>();
+                var dbContext = scope.ServiceProvider.GetRequiredService<TaskItemContext>();
                 dbContext.Database.Migrate();
             }
 

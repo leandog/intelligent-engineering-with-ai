@@ -1,38 +1,46 @@
 using Microsoft.AspNetCore.Mvc;
 using TaskManagementApi.Models;
+using TaskManagementApi.Repositories;
 using TaskManagementApi.Services;
 
 namespace TaskManagementApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class TaskController(ITaskService taskService) : ControllerBase
+    public class TaskItemController(ITaskItemService taskService) : ControllerBase
     {
-        private readonly ITaskService taskService = taskService;
+        private readonly ITaskItemService taskService = taskService;
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<TaskItem>>> GetAllTasks()
         {
-            var tasks = await taskService.GetAllTasks();
-            return Ok(tasks);
+            var taskItems = await taskService.GetAllTaskItems();
+            return Ok(taskItems);
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<TaskItem>> GetTaskById(int id)
+        public async Task<ActionResult<TaskItem>> GetTaskItemById(int id)
         {
-            var task = await taskService.GetTaskById(id);
-            if (task == null)
+            try
             {
-                return NotFound();
+                var task = await taskService.GetTaskItemById(id);
+                return Ok(task);
             }
-            return Ok(task);
+            catch (TaskItemNotFoundException e)
+            {
+                return NotFound(e.Message);
+            }
         }
 
         [HttpPost]
         public async Task<ActionResult<TaskItem>> CreateTask(TaskItem task)
         {
-            var createdTask = await taskService.AddTask(task);
-            return CreatedAtAction(nameof(GetTaskById), new { id = createdTask.Id }, createdTask);
+            var createdTask = await taskService.AddTaskItem(task);
+            return CreatedAtAction(
+                nameof(GetTaskItemById),
+                new { id = createdTask.Id },
+                createdTask
+            );
         }
 
         [HttpPut("{id}")]
@@ -42,7 +50,7 @@ namespace TaskManagementApi.Controllers
             {
                 return BadRequest();
             }
-            var updatedTask = await taskService.UpdateTask(task);
+            var updatedTask = await taskService.UpdateTaskItem(task);
             if (updatedTask == null)
             {
                 return NotFound();
@@ -53,7 +61,7 @@ namespace TaskManagementApi.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteTask(int id)
         {
-            var isDeleted = await taskService.DeleteTask(id);
+            var isDeleted = await taskService.DeleteTaskItem(id);
             if (!isDeleted)
             {
                 return NotFound();

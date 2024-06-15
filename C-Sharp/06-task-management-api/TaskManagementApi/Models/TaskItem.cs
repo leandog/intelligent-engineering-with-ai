@@ -1,6 +1,6 @@
 namespace TaskManagementApi.Models
 {
-    public enum TaskStatus
+    public enum TaskItemStatus
     {
         Pending,
         InProgress,
@@ -13,6 +13,6 @@ namespace TaskManagementApi.Models
         public required string Title { get; set; }
         public required string Description { get; set; }
         public required DateTime DueDate { get; set; }
-        public required TaskStatus Status { get; set; }
+        public required TaskItemStatus Status { get; set; }
     }
 }
