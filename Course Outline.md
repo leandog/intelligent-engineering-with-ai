@@ -62,7 +62,7 @@ This detailed morning session ensures participants are introduced to TDD in a pr
    - Writing minimal code to pass tests.
    - Assisting in refactoring for better code quality.
 
-**Practical Exercise: Fizz Buzz Kata (String Parse Time) with TDD and AI Tools (1 hour 30 minutes)**
+**Practical Exercise: Fizz Buzz Kata (Duration Converter) with TDD and AI Tools (1 hour 30 minutes)**
 
 1. **Step-by-Step Guide:**
 
