@@ -115,37 +115,6 @@ This detailed morning session ensures participants are introduced to TDD in a pr
      - **Interface Segregation Principle**
      - **Dependency Inversion Principle**.
 
-2. **Extreme Programming (XP) Overview (15 minutes)**
-
-   - Values of Extreme Programming: Communication, Simplicity, Feedback, Courage, Respect.
-   - Core practices: Pair programming, continuous integration, small releases, simple design, and system metaphor.
-
-3. **ZOMBIE Testing Technique (15 minutes)**
-
-   - **Introduction to ZOMBIE Testing:**
-     - **Z**: Zero - What happens if there are zero of a thing?
-     - **O**: One - What happens when there is exactly one of a thing?
-     - **M**: Many - What happens when there are more than one thing?
-     - **B**: Boundaries - Are there special boundary values for the thing?
-     - **I**: Interfaces - Are there common interfaces with expectations?
-     - **E**: Exceptions/Errors - What cases cause errors? Exactly what should they do?
-   - **Practical Exercise:**
-     - Apply the ZOMBIE testing technique to a simple problem, discussing how to use this approach to identify edge cases and potential issues.
-
-4. **Fake it till you make it**
-
-Start with the simplest solution that could possibly work, even if it is just hardcoding the answer. Gradually replace hardcoded parts with real logic as more tests are added and pass.
-
-5. **DRY - Don't Repeat Yourself**
-
-Avoid duplication. Each piece of knowledge must have a single, unambiguous, authoritative representation within a system.
-
-6. **YAGNI**
-
-Implement only what is necessary. Don’t add functionality until it is deemed necessary.
-
-7. **Fake it till you make it**
-
 **Wrap-Up and Q&A (15 minutes)**
 
 1. **Summarize Key Takeaways from the Morning Session**
@@ -178,6 +147,39 @@ This detailed afternoon session ensures participants build on their TDD skills w
    - Strengths of AI tools in accelerating development and enhancing productivity.
    - Limitations and potential pitfalls to be aware of.
    - Best practices for integrating AI tools into the development workflow.
+
+**Additional Topics: Software Craftsmanship and Extreme Programming (1 hour)**
+
+1. **Extreme Programming (XP) Overview (15 minutes)**
+
+   - Values of Extreme Programming: Communication, Simplicity, Feedback, Courage, Respect.
+   - Core practices: Pair programming, continuous integration, small releases, simple design, and system metaphor.
+
+2. **ZOMBIE Testing Technique (15 minutes)**
+
+   - **Introduction to ZOMBIE Testing:**
+     - **Z**: Zero - What happens if there are zero of a thing?
+     - **O**: One - What happens when there is exactly one of a thing?
+     - **M**: Many - What happens when there are more than one thing?
+     - **B**: Boundaries - Are there special boundary values for the thing?
+     - **I**: Interfaces - Are there common interfaces with expectations?
+     - **E**: Exceptions/Errors - What cases cause errors? Exactly what should they do?
+   - **Practical Exercise:**
+     - Apply the ZOMBIE testing technique to a simple problem, discussing how to use this approach to identify edge cases and potential issues.
+
+3. **Fake it till you make it**
+
+Start with the simplest solution that could possibly work, even if it is just hardcoding the answer. Gradually replace hardcoded parts with real logic as more tests are added and pass.
+
+5. **DRY - Don't Repeat Yourself**
+
+Avoid duplication. Each piece of knowledge must have a single, unambiguous, authoritative representation within a system.
+
+6. **YAGNI**
+
+Implement only what is necessary. Don’t add functionality until it is deemed necessary.
+
+7. **Fake it till you make it**
 
 **Introduction to the Bowling Kata (10 minutes)**
 
@@ -295,36 +297,11 @@ This detailed afternoon session ensures participants build on their TDD skills w
      - Avoiding duplication.
      - Writing code that expresses intent.
 
-**Practical Exercise: Refactoring with AI Tools (45 minutes)**
-
-7. **Step-by-Step Guide:**
-
-   **Step 1: Identify Code Smells (10 minutes)**
-
-   - **Instructor Demonstration:**
-     - Use AI tools to identify code smells in the Roman Numeral Calculator codebase.
-     - Discuss the significance of each identified issue.
-
-   **Step 2: Refactor the Code (15 minutes)**
-
-   - **Instructor Demonstration:**
-     - Use AI tools to assist in refactoring the code.
-     - Manually verify and improve the AI-suggested refactorings.
-
-   **Step 3: Apply Clean Code Principles (20 minutes)**
-
-   - **Instructor Demonstration:**
-     - Refactor the codebase to adhere to clean code principles.
-     - Examples of renaming variables, breaking down large functions, and removing duplication.
-
-8. **Hands-On Practice: Pair Programming Exercise (15 minutes)**
-   - Participants work in pairs to refactor a provided codebase using AI tools and clean code principles.
-   - Instructors provide guidance and support, ensuring best practices are followed.
-
 **Wrap-Up and Q&A (15 minutes)**
 
 1. **Summarize Key Takeaways from the Afternoon Session**
 
+   - Clean coding and refactoring
    - Emphasize the importance of TDD, AI tools, refactoring, and clean code principles.
    - Encourage continuous practice and improvement.
 
@@ -360,6 +337,32 @@ This detailed morning session ensures participants build upon their knowledge fr
      - Identifying and addressing code smells
      - Applying design patterns
      - Using AI tools effectively
+
+**Practical Exercise: Refactoring with AI Tools (45 minutes)**
+
+7. **Step-by-Step Guide:**
+
+   **Step 1: Identify Code Smells (10 minutes)**
+
+   - **Instructor Demonstration:**
+     - Use AI tools to identify code smells in the Roman Numeral Calculator codebase.
+     - Discuss the significance of each identified issue.
+
+   **Step 2: Refactor the Code (15 minutes)**
+
+   - **Instructor Demonstration:**
+     - Use AI tools to assist in refactoring the code.
+     - Manually verify and improve the AI-suggested refactorings.
+
+   **Step 3: Apply Clean Code Principles (20 minutes)**
+
+   - **Instructor Demonstration:**
+     - Refactor the codebase to adhere to clean code principles.
+     - Examples of renaming variables, breaking down large functions, and removing duplication.
+
+8. **Hands-On Practice: Pair Programming Exercise (15 minutes)**
+   - Participants work in pairs to refactor a provided codebase using AI tools and clean code principles.
+   - Instructors provide guidance and support, ensuring best practices are followed.
 
 **The Boy Scout Rule and "Make the Change Easy, Then Make the Easy Change" (15 minutes)**
 
