@@ -338,35 +338,16 @@ This detailed morning session ensures participants build upon their knowledge fr
      - Applying design patterns
      - Using AI tools effectively
 
-**Practical Exercise: Refactoring with AI Tools (45 minutes)**
+**Code Smells and Design Patterns (1 hour 30 minutes)**
 
-7. **Step-by-Step Guide:**
-
-   **Step 1: Identify Code Smells (10 minutes)**
-
-   - **Instructor Demonstration:**
-     - Use AI tools to identify code smells in the Roman Numeral Calculator codebase.
-     - Discuss the significance of each identified issue.
-
-   **Step 2: Refactor the Code (15 minutes)**
-
-   - **Instructor Demonstration:**
-     - Use AI tools to assist in refactoring the code.
-     - Manually verify and improve the AI-suggested refactorings.
-
-   **Step 3: Apply Clean Code Principles (20 minutes)**
-
-   - **Instructor Demonstration:**
-     - Refactor the codebase to adhere to clean code principles.
-     - Examples of renaming variables, breaking down large functions, and removing duplication.
-
-8. **Hands-On Practice: Pair Programming Exercise (15 minutes)**
-   - Participants work in pairs to refactor a provided codebase using AI tools and clean code principles.
-   - Instructors provide guidance and support, ensuring best practices are followed.
+3. **Introduction to Code Smells (15 minutes)**
+   - Overview of common code smells:
+     - Long methods, large classes, duplicated code, etc.
+   - Importance of identifying and addressing code smells for maintainable code.
 
 **The Boy Scout Rule and "Make the Change Easy, Then Make the Easy Change" (15 minutes)**
 
-3. **Introduction to the Boy Scout Rule (7 minutes)**
+4. **Introduction to the Boy Scout Rule (7 minutes)**
 
    - **Objective**: Emphasize the importance of continuous improvement in code quality.
    - **Concept**:
@@ -376,7 +357,7 @@ This detailed morning session ensures participants build upon their knowledge fr
      - Examples of applying the Boy Scout Rule in daily coding practices.
      - Benefits of consistent, small refactorings over time.
 
-4. **Introduction to "Make the Change Easy, Then Make the Easy Change" (8 minutes)**
+5. **Introduction to "Make the Change Easy, Then Make the Easy Change" (8 minutes)**
    - **Objective**: Understand the two-step approach to effective refactoring and feature addition.
    - **Concept**:
      - "Make the Change Easy": Refactor the code to make it easier to implement changes.
@@ -387,7 +368,7 @@ This detailed morning session ensures participants build upon their knowledge fr
 
 **Gilded Rose Kata with TDD and AI Tools (2 hours)**
 
-5. **Introduction to the Gilded Rose Kata (15 minutes)**
+6. **Introduction to the Gilded Rose Kata (15 minutes)**
    - Overview of the Gilded Rose problem:
      - Maintain and refactor a piece of legacy code while adding new features.
      - Emphasis on understanding and improving existing code without breaking it.
@@ -395,7 +376,7 @@ This detailed morning session ensures participants build upon their knowledge fr
 
 **Practical Exercise: Gilded Rose Kata with TDD and AI Tools**
 
-6. **Step-by-Step Guide:**
+7. **Step-by-Step Guide:**
 
    **Step 1: Analyze Existing Code (15 minutes)**
 
@@ -429,68 +410,33 @@ This detailed morning session ensures participants build upon their knowledge fr
      - Add new features to the Gilded Rose application while ensuring all tests pass.
      - Use the TDD cycle: Red, Green, Refactor for each new feature.
 
-7. **Using ChatGPT as an Assistant (15 minutes)**
+8. **Using ChatGPT as an Assistant (15 minutes)**
 
    - **Instructor Demonstration**:
      - Show how ChatGPT can provide explanations and suggestions during the TDD process.
      - Example: Ask ChatGPT to suggest additional test cases or help debug issues.
 
-8. **Hands-On Practice: Pair Programming Exercise (1 hour)**
-   - Participants work in pairs to implement the Gilded Rose kata using TDD and GitHub Copilot.
-   - Instructors provide guidance and support, ensuring adherence to TDD practices.
-   - Encourage participants to use ChatGPT to clarify doubts and get suggestions.
-
-**Code Smells and Design Patterns (1 hour 30 minutes)**
-
-9. **Introduction to Code Smells (15 minutes)**
-   - Overview of common code smells:
-     - Long methods, large classes, duplicated code, etc.
-   - Importance of identifying and addressing code smells for maintainable code.
-
-**Practical Exercise: Identifying Code Smells (15 minutes)**
-
-10. **Step-by-Step Guide:**
-
-    **Step 1: Identify Code Smells in Gilded Rose (15 minutes)**
-
-- **Instructor Demonstration**:
-  - Review the Gilded Rose codebase to identify code smells.
-  - Discuss each identified issue and its implications.
-
-11. **Introduction to Design Patterns (15 minutes)**
+9. **Introduction to Design Patterns (15 minutes)**
 
 - Overview of common design patterns:
   - Singleton, Factory, Strategy, Observer, etc.
 - Importance of using design patterns for scalable and maintainable code.
 
-**Practical Exercise: Applying Design Patterns (15 minutes)**
-
-12. **Step-by-Step Guide:**
-
-    **Step 1: Refactor Gilded Rose using Design Patterns (15 minutes)**
-
-    - **Instructor Demonstration**:
-      - Refactor parts of the Gilded Rose codebase using appropriate design patterns.
-      - Discuss the benefits and challenges of each pattern.
-
-13. **Hands-On Practice: Pair Programming Exercise (30 minutes)**
-    - Participants work in pairs to identify code smells and apply design patterns in the Gilded Rose kata.
-    - Instructors provide guidance and support, ensuring best practices are followed.
-
 **Wrap-Up and Q&A (15 minutes)**
 
-1. **Summarize Key Takeaways from the Morning Session**
+10. **Summarize Key Takeaways from the Morning Session**
 
-   - Emphasize the importance of TDD, AI tools, and software craftsmanship principles.
-   - Encourage continuous practice and improvement.
+- Emphasize the importance of TDD, AI tools, and software craftsmanship principles.
+- Encourage continuous practice and improvement.
 
-2. **Open Floor for Questions and Discussions**
+11. **Open Floor for Questions and Discussions**
 
-   - Address any challenges faced by participants.
-   - Provide solutions and additional resources as needed.
+- Address any challenges faced by participants.
+- Provide solutions and additional resources as needed.
 
-3. **Preview of the Afternoon Session**
-   - Focus on prompt engineering, building an API application, and deploying using GitHub Actions and a free cloud provider.
+12. **Preview of the Afternoon Session**
+
+- Focus on prompt engineering, building an API application, and deploying using GitHub Actions and a free cloud provider.
 
 ### Day 2: Afternoon Session
 
