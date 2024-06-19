@@ -8,7 +8,7 @@
 
 This detailed morning session ensures participants are introduced to TDD in a practical, hands-on manner while also learning to leverage AI tools effectively and understanding crucial software craftsmanship principles, extreme programming practices, and innovative problem-solving techniques like ZOMBIE testing.
 
-**Welcome and Introductions (30 minutes)**
+**Welcome and Introductions**
 
 1. **Brief Introduction by the Instructor**
 
@@ -19,7 +19,7 @@ This detailed morning session ensures participants are introduced to TDD in a pr
    - Participants share their backgrounds, experience with TDD, and familiarity with AI tools like GitHub Copilot and ChatGPT.
    - Discuss previous experimentation with AI in coding.
 
-**Introducing Tyler Morgan, the Intelligent Engineering Course Assistant (10 minutes)**
+**Introducing Tyler Morgan, the Intelligent Engineering Course Assistant**
 
 1. **Overview of Tyler Morgan’s Role**
 
@@ -30,7 +30,7 @@ This detailed morning session ensures participants are introduced to TDD in a pr
    - Providing explanations and suggestions.
    - Answering questions related to TDD, software craftsmanship, and AI integration.
 
-**Course Objectives and Structure (10 minutes)**
+**Course Objectives and Structure**
 
 1. **Overview of Course Modules and Learning Outcomes**
 
@@ -42,7 +42,7 @@ This detailed morning session ensures participants are introduced to TDD in a pr
    - How AI tools can assist in coding, testing, and documentation.
    - Benefits of integrating AI into traditional software engineering practices.
 
-**Introduction to TDD with Fizz Buzz Kata (10 minutes)**
+**Introduction to TDD with Fizz Buzz Kata**
 
 1. **Overview of the Fizz Buzz Problem**
 
@@ -62,49 +62,49 @@ This detailed morning session ensures participants are introduced to TDD in a pr
    - Writing minimal code to pass tests.
    - Assisting in refactoring for better code quality.
 
-**Practical Exercise: Fizz Buzz Kata (Duration Converter) with TDD and AI Tools (1 hour 30 minutes)**
+**Practical Exercise: Fizz Buzz Kata (Duration Converter) with TDD and AI Tools**
 
 1. **Step-by-Step Guide:**
 
    **Step 1: Write the First Test (Red)**
 
-   - **Instructor Demonstration (15 minutes):**
+   - **Instructor Demonstration:**
      - Use GitHub Copilot to generate an initial test case for the Fizz Buzz problem.
      - Example Test Case: Ensure the number 1 prints "1".
      - Discuss how to verify the generated code and ensure it aligns with TDD principles.
 
    **Step 2: Make the Test Pass (Green)**
 
-   - **Instructor Demonstration (10 minutes):**
+   - **Instructor Demonstration:**
      - Use Copilot to generate the minimal code needed to pass the test.
      - Discuss the manual verification of the code's correctness.
 
    **Step 3: Refactor**
 
-   - **Instructor Demonstration (10 minutes):**
+   - **Instructor Demonstration:**
      - Refactor the code with the assistance of Copilot to improve readability and maintainability.
      - Ensure the test still passes after refactoring.
 
    **Step 4: Repeat the Cycle**
 
-   - **Instructor Demonstration (10 minutes):**
+   - **Instructor Demonstration:**
      - Add additional test cases and iterate through the TDD cycle.
      - Example Test Cases: Ensure numbers divisible by 3 print "Fizz", numbers divisible by 5 print "Buzz", and numbers divisible by both print "FizzBuzz".
 
-2. **Using ChatGPT as an Assistant (15 minutes)**
+2. **Using ChatGPT as an Assistant**
 
    - **Instructor Demonstration:**
      - Show how ChatGPT can provide explanations and suggestions during the TDD process.
      - Example: Ask ChatGPT to explain the difference between Mocks and Stubs or suggest ways to refactor code.
 
-3. **Hands-On Practice: Pair Programming Exercise (30 minutes)**
+3. **Hands-On Practice: Pair Programming Exercise**
    - Participants work in pairs to implement the Fizz Buzz kata using TDD and GitHub Copilot.
    - Instructors provide guidance and support, ensuring adherence to TDD practices.
    - Encourage participants to use ChatGPT to clarify doubts and get suggestions.
 
-**Additional Topics: Software Craftsmanship and Extreme Programming (1 hour)**
+**Additional Topics: Software Craftsmanship and Extreme Programming**
 
-1. **Introduction to Software Craftsmanship (15 minutes)**
+1. **Introduction to Software Craftsmanship**
 
    - Overview of software craftsmanship principles.
    - Importance of clean code and continuous improvement.
@@ -115,7 +115,7 @@ This detailed morning session ensures participants are introduced to TDD in a pr
      - **Interface Segregation Principle**
      - **Dependency Inversion Principle**.
 
-**Wrap-Up and Q&A (15 minutes)**
+**Wrap-Up and Q&A**
 
 1. **Summarize Key Takeaways from the Morning Session**
 
@@ -135,27 +135,27 @@ This detailed morning session ensures participants are introduced to TDD in a pr
 
 This detailed afternoon session ensures participants build on their TDD skills while integrating AI tools effectively, practicing refactoring techniques, and tackling more complex problems like the Bowling Kata and Roman Numeral Calculator. This session includes an introduction to clean code concepts, ensuring participants learn to write clean, maintainable code while practicing TDD and integrating AI tools.
 
-**Overview of AI Tools and Current Capabilities (30 minutes)**
+**Overview of AI Tools and Current Capabilities**
 
-1. **Introduction to AI Tools (15 minutes)**
+1. **Introduction to AI Tools**
 
    - Overview of GitHub Copilot and ChatGPT.
    - Discuss how these tools can assist in coding, testing, and documentation.
    - Provide a GitHub Copilot cheat sheet with common commands and tips.
 
-2. **Current Capabilities and Limitations (15 minutes)**
+2. **Current Capabilities and Limitations**
    - Strengths of AI tools in accelerating development and enhancing productivity.
    - Limitations and potential pitfalls to be aware of.
    - Best practices for integrating AI tools into the development workflow.
 
-**Additional Topics: Software Craftsmanship and Extreme Programming (1 hour)**
+**Additional Topics: Software Craftsmanship and Extreme Programming**
 
-1. **Extreme Programming (XP) Overview (15 minutes)**
+1. **Extreme Programming (XP) Overview**
 
    - Values of Extreme Programming: Communication, Simplicity, Feedback, Courage, Respect.
    - Core practices: Pair programming, continuous integration, small releases, simple design, and system metaphor.
 
-2. **ZOMBIE Testing Technique (15 minutes)**
+2. **ZOMBIE Testing Technique**
 
    - **Introduction to ZOMBIE Testing:**
      - **Z**: Zero - What happens if there are zero of a thing?
@@ -181,7 +181,7 @@ Implement only what is necessary. Don’t add functionality until it is deemed n
 
 7. **Fake it till you make it**
 
-**Introduction to the Bowling Kata (10 minutes)**
+**Introduction to the Bowling Kata**
 
 1. **Overview of the Problem**
 
@@ -192,46 +192,46 @@ Implement only what is necessary. Don’t add functionality until it is deemed n
    - Applying the TDD cycle: Red, Green, Refactor.
    - Example scenarios and edge cases to consider.
 
-**Practical Exercise: Bowling Kata with TDD and AI Tools (1 hour)**
+**Practical Exercise: Bowling Kata with TDD and AI Tools**
 
 3. **Step-by-Step Guide:**
 
    **Step 1: Write the First Test (Red)**
 
-   - **Instructor Demonstration (10 minutes):**
+   - **Instructor Demonstration:**
      - Use GitHub Copilot to generate initial test cases for the Bowling Kata problem.
      - Discuss how to verify the generated code and ensure it aligns with TDD principles.
 
    **Step 2: Make the Test Pass (Green)**
 
-   - **Instructor Demonstration (10 minutes):**
+   - **Instructor Demonstration:**
      - Use Copilot to generate the minimal code needed to pass the test.
      - Discuss the manual verification of the code's correctness.
 
    **Step 3: Refactor**
 
-   - **Instructor Demonstration (10 minutes):**
+   - **Instructor Demonstration:**
      - Refactor the code with the assistance of Copilot to improve readability and maintainability.
      - Ensure the test still passes after refactoring.
 
    **Step 4: Repeat the Cycle**
 
-   - **Instructor Demonstration (10 minutes):**
+   - **Instructor Demonstration:**
      - Add additional test cases and iterate through the TDD cycle.
      - Example Test Cases: Ensure various bowling game scenarios produce correct results.
 
-4. **Using ChatGPT as an Assistant (10 minutes)**
+4. **Using ChatGPT as an Assistant**
 
    - **Instructor Demonstration:**
      - Show how ChatGPT can provide explanations and suggestions during the TDD process.
      - Example: Ask ChatGPT to suggest additional test cases or help debug issues.
 
-5. **Hands-On Practice: Pair Programming Exercise (15 minutes)**
+5. **Hands-On Practice: Pair Programming Exercise**
    - Participants work in pairs to implement the Bowling Kata using TDD and GitHub Copilot.
    - Instructors provide guidance and support, ensuring adherence to TDD practices.
    - Encourage participants to use ChatGPT to clarify doubts and get suggestions.
 
-**Introduction to the Roman Numeral Calculator Kata (10 minutes)**
+**Introduction to the Roman Numeral Calculator Kata**
 
 1. **Overview of the Problem**
 
@@ -242,11 +242,11 @@ Implement only what is necessary. Don’t add functionality until it is deemed n
    - Applying the TDD cycle: Red, Green, Refactor.
    - Example scenarios and edge cases to consider.
 
-**Practical Exercise: Roman Numeral Calculator Kata with TDD and AI Tools (1 hour)**
+**Practical Exercise: Roman Numeral Calculator Kata with TDD and AI Tools**
 
 3. **Step-by-Step Guide:**
 
-   **Step 1: Analyze Existing Code (10 minutes)**
+   **Step 1: Analyze Existing Code**
 
    - **Instructor Demonstration:**
      - Review any existing code for the Roman Numeral Calculator.
@@ -254,42 +254,42 @@ Implement only what is necessary. Don’t add functionality until it is deemed n
 
    **Step 2: Write the First Test (Red)**
 
-   - **Instructor Demonstration (15 minutes):**
+   - **Instructor Demonstration:**
      - Use GitHub Copilot to generate initial test cases for converting Roman numerals to integers.
      - Discuss how to verify the generated code and ensure it aligns with TDD principles.
 
    **Step 3: Make the Test Pass (Green)**
 
-   - **Instructor Demonstration (10 minutes):**
+   - **Instructor Demonstration:**
      - Use Copilot to generate the minimal code needed to pass the test.
      - Discuss the manual verification of the code's correctness.
 
    **Step 4: Refactor**
 
-   - **Instructor Demonstration (10 minutes):**
+   - **Instructor Demonstration:**
      - Refactor the code with the assistance of Copilot to improve readability and maintainability.
      - Ensure the test still passes after refactoring.
 
    **Step 5: Add New Features and Tests**
 
-   - **Instructor Demonstration (15 minutes):**
+   - **Instructor Demonstration:**
      - Add new features to the Roman Numeral Calculator while ensuring all tests pass.
      - Use the TDD cycle: Red, Green, Refactor for each new feature.
 
-4. **Using ChatGPT as an Assistant (10 minutes)**
+4. **Using ChatGPT as an Assistant**
 
    - **Instructor Demonstration:**
      - Show how ChatGPT can provide explanations and suggestions during the TDD process.
      - Example: Ask ChatGPT to suggest additional test cases or help debug issues.
 
-5. **Hands-On Practice: Pair Programming Exercise (15 minutes)**
+5. **Hands-On Practice: Pair Programming Exercise**
    - Participants work in pairs to implement the Roman Numeral Calculator kata using TDD and GitHub Copilot.
    - Instructors provide guidance and support, ensuring adherence to TDD practices.
    - Encourage participants to use ChatGPT to clarify doubts and get suggestions.
 
-**Refactoring Techniques and Clean Code Concepts (1 hour)**
+**Refactoring Techniques and Clean Code Concepts**
 
-6. **Introduction to Refactoring and Clean Code (15 minutes)**
+6. **Introduction to Refactoring and Clean Code**
    - Overview of refactoring principles and techniques.
    - Introduction to clean code principles:
      - Meaningful names.
@@ -297,7 +297,7 @@ Implement only what is necessary. Don’t add functionality until it is deemed n
      - Avoiding duplication.
      - Writing code that expresses intent.
 
-**Wrap-Up and Q&A (15 minutes)**
+**Wrap-Up and Q&A**
 
 1. **Summarize Key Takeaways from the Afternoon Session**
 
@@ -320,9 +320,9 @@ Implement only what is necessary. Don’t add functionality until it is deemed n
 
 This detailed morning session ensures participants build upon their knowledge from Day 1 while introducing new concepts like the Gilded Rose kata, code smells, and design patterns.
 
-**Recap and Introduction (30 minutes)**
+**Recap and Introduction**
 
-1. **Recap of Day 1 (15 minutes)**
+1. **Recap of Day 1**
 
    - Brief overview of key concepts covered:
      - TDD cycle: Red, Green, Refactor
@@ -331,23 +331,23 @@ This detailed morning session ensures participants build upon their knowledge fr
      - Integration of AI tools like GitHub Copilot and ChatGPT
    - Discuss key takeaways and address any questions from Day 1.
 
-2. **Overview of Day 2 Objectives (15 minutes)**
+2. **Overview of Day 2 Objectives**
    - Outline the focus areas for the morning session:
      - Gilded Rose Kata as the main hands-on exercise
      - Identifying and addressing code smells
      - Applying design patterns
      - Using AI tools effectively
 
-**Code Smells and Design Patterns (1 hour 30 minutes)**
+**Code Smells and Design Patterns**
 
-3. **Introduction to Code Smells (15 minutes)**
+1. **Introduction to Code Smells**
    - Overview of common code smells:
      - Long methods, large classes, duplicated code, etc.
    - Importance of identifying and addressing code smells for maintainable code.
 
-**The Boy Scout Rule and "Make the Change Easy, Then Make the Easy Change" (15 minutes)**
+**The Boy Scout Rule and "Make the Change Easy, Then Make the Easy Change"**
 
-4. **Introduction to the Boy Scout Rule (7 minutes)**
+1. **Introduction to the Boy Scout Rule**
 
    - **Objective**: Emphasize the importance of continuous improvement in code quality.
    - **Concept**:
@@ -357,7 +357,7 @@ This detailed morning session ensures participants build upon their knowledge fr
      - Examples of applying the Boy Scout Rule in daily coding practices.
      - Benefits of consistent, small refactorings over time.
 
-5. **Introduction to "Make the Change Easy, Then Make the Easy Change" (8 minutes)**
+2. **Introduction to "Make the Change Easy, Then Make the Easy Change"**
    - **Objective**: Understand the two-step approach to effective refactoring and feature addition.
    - **Concept**:
      - "Make the Change Easy": Refactor the code to make it easier to implement changes.
@@ -366,9 +366,9 @@ This detailed morning session ensures participants build upon their knowledge fr
      - Examples of breaking down complex changes into manageable steps.
      - How this approach minimizes risks and improves code maintainability.
 
-**Gilded Rose Kata with TDD and AI Tools (2 hours)**
+**Gilded Rose Kata with TDD and AI Tools**
 
-6. **Introduction to the Gilded Rose Kata (15 minutes)**
+1. **Introduction to the Gilded Rose Kata**
    - Overview of the Gilded Rose problem:
      - Maintain and refactor a piece of legacy code while adding new features.
      - Emphasis on understanding and improving existing code without breaking it.
@@ -378,7 +378,7 @@ This detailed morning session ensures participants build upon their knowledge fr
 
 7. **Step-by-Step Guide:**
 
-   **Step 1: Analyze Existing Code (15 minutes)**
+   **Step 1: Analyze Existing Code**
 
    - **Instructor Demonstration**:
      - Review the current state of the Gilded Rose codebase.
@@ -388,41 +388,41 @@ This detailed morning session ensures participants build upon their knowledge fr
 
    **Step 2: Write the First Test (Red)**
 
-   - **Instructor Demonstration (20 minutes)**:
+   - **Instructor Demonstration**:
      - Use GitHub Copilot to generate initial test cases for the existing functionality.
      - Discuss how to verify the generated code and ensure it aligns with TDD principles.
 
    **Step 3: Make the Test Pass (Green)**
 
-   - **Instructor Demonstration (15 minutes)**:
+   - **Instructor Demonstration**:
      - Use Copilot to generate the minimal code needed to pass the test.
      - Discuss the manual verification of the code's correctness.
 
    **Step 4: Refactor**
 
-   - **Instructor Demonstration (15 minutes)**:
+   - **Instructor Demonstration**:
      - Refactor the code with the assistance of Copilot to improve readability and maintainability.
      - Ensure the test still passes after refactoring.
 
    **Step 5: Add New Features and Tests**
 
-   - **Instructor Demonstration (20 minutes)**:
+   - **Instructor Demonstration**:
      - Add new features to the Gilded Rose application while ensuring all tests pass.
      - Use the TDD cycle: Red, Green, Refactor for each new feature.
 
-8. **Using ChatGPT as an Assistant (15 minutes)**
+8. **Using ChatGPT as an Assistant**
 
    - **Instructor Demonstration**:
      - Show how ChatGPT can provide explanations and suggestions during the TDD process.
      - Example: Ask ChatGPT to suggest additional test cases or help debug issues.
 
-9. **Introduction to Design Patterns (15 minutes)**
+9. **Introduction to Design Patterns**
 
 - Overview of common design patterns:
   - Singleton, Factory, Strategy, Observer, etc.
 - Importance of using design patterns for scalable and maintainable code.
 
-**Wrap-Up and Q&A (15 minutes)**
+**Wrap-Up and Q&A**
 
 10. **Summarize Key Takeaways from the Morning Session**
 
@@ -440,111 +440,95 @@ This detailed morning session ensures participants build upon their knowledge fr
 
 ### Day 2: Afternoon Session
 
-This detailed afternoon session ensures participants gain practical experience in prompt engineering, building a simple API application, and deploying it using GitHub Actions and a free cloud provider. It also covers the important concepts of stubs, mocks, fakes, and test doubles, integrating them into the to-do task application.
+This detailed afternoon session ensures participants gain practical experience in prompt engineering, building a simple API application, and deploying it using GitHub Actions and a free cloud provider. It also covers the important concepts of stubs, mocks, fakes, and test doubles, integrating them into the task application.
 
-**Introduction to Prompt Engineering (30 minutes)**
+**Introduction to Prompt Engineering**
 
-1. **Overview of Prompt Engineering (15 minutes)**
+1. **Overview of Prompt Engineering**
 
    - Explain the concept of prompt engineering.
    - Importance of crafting effective prompts for AI tools.
    - Examples of effective prompts for different scenarios, including code generation, debugging, and documentation.
 
-2. **Hands-On Exercise: Writing Effective Prompts (15 minutes)**
-   - Participants practice writing prompts for various tasks.
-   - Use ChatGPT to generate code snippets, debug code, and provide documentation suggestions.
-   - Share and discuss results as a group.
+2. **7 Stages of Naming**
 
-**Building a Simple API Application (1 hour 45 minutes)**
+3. **Common Refactorings**
 
-1. **Overview of the Application (15 minutes)**
+   - Restructure (the source code of an application or piece of software) to improve operation without altering functionality
 
-   - Explain the structure and components of an API application.
-   - Introduce the to-do task application as the example project.
-   - Discuss the use of an in-memory database (SQLite) for simplicity and quick setup.
+4. **The Three Laws of TDD**
 
-2. **Setting Up the Project (30 minutes)**
+**Stubs, Mocks, Fakes, and Doubles**
 
-   - **Instructor Demonstration:**
-     - Create a new API project.
-     - Set up SQLite as the in-memory database.
-     - Configure the necessary dependencies and packages.
-   - **Hands-On Practice:**
-     - Participants follow along to set up their projects.
-     - Instructors provide guidance and support.
-
-3. **Developing the To-Do Task Application (45 minutes)**
-   - **Instructor Demonstration:**
-     - Implement the basic features of the to-do task application:
-       - Create, Read, Update, and Delete (CRUD) operations for tasks.
-     - Integrate GitHub Copilot to assist in writing code.
-   - **Hands-On Practice:**
-     - Participants work in pairs to implement the application.
-     - Instructors provide guidance and support, ensuring best practices are followed.
-     - Encourage participants to use ChatGPT for additional help and suggestions.
-
-**Stubs, Mocks, Fakes, and Doubles (1 hour 30 minutes)**
-
-6. **Introduction to Stubs, Mocks, Fakes, and Doubles (15 minutes)**
+5. **Introduction to Stubs, Mocks, Fakes, and Doubles**
    - Explain the differences between stubs, mocks, fakes, and test doubles.
    - Importance of these techniques in TDD and unit testing.
 
-**Practical Exercise: Implementing Stubs, Mocks, Fakes, and Doubles (45 minutes)**
+**Task API Application Overview**
 
-7. **Step-by-Step Guide:**
+6. **Overview of the Application**
 
-   **Step 1: Setting Up the Testing Environment (15 minutes)**
+   - Explain the structure and components of an API application.
+   - Introduce the task application as the example project.
+   - Discuss the use of an in-memory database (SQLite) for simplicity and quick setup.
+   - Demo how migrations work
 
-   - **Instructor Demonstration:**
-     - Configure the project for unit testing.
-     - Introduce a testing framework like NUnit or xUnit.
-     - Explain how to set up and use mocking frameworks like Moq.
+7. **Setting Up the Project**
 
-   **Step 2: Creating and Using Stubs and Mocks (15 minutes)**
+   - Make sure everyone is setup
+   - Go over existing tests and how to run
 
-   - **Instructor Demonstration:**
-     - Implement stubs and mocks for the to-do task application.
-     - Discuss scenarios where stubs and mocks are beneficial.
+8. **Add a feature to the Task Application**
 
-   **Step 3: Applying Fakes and Doubles (15 minutes)**
+   - Add a new field to the task model called "Priority"
+   - It should be an enum with values ("Low", "Medium", "High")
+   - When returned from the API, a task should have the text low medium high, not just the number
+   - The order of returned tasks should be by priority (high first), then by the due date (most recent first)
 
-   - **Instructor Demonstration:**
-     - Implement fakes and test doubles for specific components.
-     - Explain how fakes and doubles can simplify testing in certain situations.
-
-8. **Hands-On Practice: Pair Programming Exercise (30 minutes)**
-   - Participants work in pairs to implement stubs, mocks, fakes, and test doubles in their to-do task application.
-   - Instructors provide guidance and support, ensuring best practices are followed.
-   - Encourage participants to use ChatGPT to clarify doubts and get suggestions.
-
-**Deploying the Application using GitHub Actions and a Free Cloud Provider (30 minutes)**
-
-9. **Introduction to GitHub Actions and Deployment (10 minutes)**
+9. **Setup Continuous Integration using GitHub Actions**
 
    - Overview of continuous integration with GitHub Actions.
-   - Introduction to free cloud providers like Heroku, Vercel, or Netlify.
+   - Set up GitHub Actions for continuous integration.
 
-10. **Hands-On Exercise: Deploying the To-Do Task Application (20 minutes)**
-    - **Instructor Demonstration:**
-      - Set up GitHub Actions for continuous integration.
-      - Configure deployment to a free cloud provider.
-    - **Hands-On Practice:**
-      - Participants follow along to deploy their applications.
-      - Instructors provide guidance and support.
+**Other Considerations**
 
-**Wrap-Up and Q&A (15 minutes)**
+10. **Emergent Design**
 
-11. **Summarize Key Takeaways from the Afternoon Session**
+11. **Simple Design**
+
+12. **The 10 Minute Rule**
+
+13. **Legacy Code and TDD**
+
+**Deploying the Application using GitHub Actions and a Free Cloud Provider**
+
+14. **Introduction to GitHub Actions and Deployment**
+
+- Overview of continuous integration with GitHub Actions.
+- Introduction to free cloud providers like Heroku, Vercel, or Netlify.
+
+15. **Hands-On Exercise: Deploying the Task Application**
+
+- **Instructor Demonstration:**
+  - Set up GitHub Actions for continuous integration.
+  - Configure deployment to a free cloud provider.
+- **Hands-On Practice:**
+  - Participants follow along to deploy their applications.
+  - Instructors provide guidance and support.
+
+**Wrap-Up and Q&A**
+
+16. **Summarize Key Takeaways from the Afternoon Session**
 
     - Emphasize the importance of prompt engineering, continuous integration, and deployment.
     - Encourage participants to continue experimenting with AI tools and deployment practices.
 
-12. **Open Floor for Questions and Discussions**
+17. **Open Floor for Questions and Discussions**
 
     - Address any challenges faced by participants.
     - Provide solutions and additional resources as needed.
 
-13. **Conclusion of the Course**
+18. **Conclusion of the Course**
     - Recap key concepts learned over the two days.
     - Encourage participants to apply these concepts in their future projects.
     - Provide additional resources and contact information for further support.
