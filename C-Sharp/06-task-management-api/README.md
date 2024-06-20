@@ -6,6 +6,32 @@
 
 A simple Task Management API built with ASP.NET Core and Entity Framework Core using SQLite for persistence. This API allows you to create, read, update, and delete tasks with basic CRUD operations. The tasks have a status represented by an enum to indicate their progress.
 
+## Adding a New Feature: Task Priority
+
+### Feature Description
+
+The Task Application needs to be enhanced by adding a new feature that allows tasks to be assigned a priority level. The priority levels will be represented as an enumeration with values "Low", "Medium", and "High". This feature will also require updating the API to return the text values for priority instead of numeric values and ensure tasks are ordered by priority and due date.
+
+### Requirements
+
+1. **Add Priority Field to Task Model**
+
+   - Add a new field named `Priority` to the Task model.
+   - The `Priority` field should be an enumeration with the following values:
+     - `Low`
+     - `Medium`
+     - `High`
+   - Ensure that the `Priority` field is stored as an enum in the database.
+
+2. **Update API to Return Text Values for Priority**
+
+   - Modify the API to return the text values (`low`, `medium`, `high`) for the `Priority` field instead of numeric values.
+   - Ensure that when tasks are retrieved through the API, the priority is displayed as a string value.
+
+3. **Order Tasks by Priority and Due Date**
+   - Implement sorting logic to order tasks by their priority, with `High` priority tasks appearing first, followed by `Medium` and `Low` priority tasks.
+   - Within each priority level, tasks should be ordered by their due date, with the most recent due date appearing first.
+
 ### Project Overview
 
 #### Features
