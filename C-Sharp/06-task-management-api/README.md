@@ -89,11 +89,7 @@ The Task Application needs to be enhanced by adding a new feature that allows ta
 5. **Access the Swagger UI**:
    Open your web browser and navigate to:
    ```
-   https://localhost:5077/swagger/index.html
-   ```
-   or
-   ```
-   https://localhost:7015//swagger/index.html
+   http://localhost:5077/swagger/index.html
    ```
 
 #### Running Tests
