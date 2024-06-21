@@ -1,12 +1,31 @@
-name: Continuous Integration
+name: Task Management API - Build and Test
 
 on:
   push:
     branches: ["**"]
 
 jobs:
-  tests:
-    name: "Tests"
+  build:
+    name: "Task Management API Build and Test"
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+
+      - name: Restore dependencies
+        run: dotnet restore
+        working-directory: C-Sharp/06-task-management-api
+
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
+        working-directory: C-Sharp/06-task-management-api
+
+      - name: Run tests
+        run: dotnet test --no-restore --verbosity normal
+        working-directory: C-Sharp/06-task-management-api
