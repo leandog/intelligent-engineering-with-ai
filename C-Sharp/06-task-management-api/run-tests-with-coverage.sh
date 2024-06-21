@@ -3,7 +3,7 @@
 rm -rf TaskManagementApiTests/TestResults
 
 # Run tests and collect coverage
-dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:Exclude="[TaskManagementApi]*TaskManagementApi.Migrations.*"
+dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:Exclude=\"[TaskManagementApi]*TaskManagementApi.Migrations.*,[TaskManagementApi]TaskManagementApi.Program,[TaskManagementApi]TaskManagementApi.Startup\"
 
 # Find the latest coverage file
 coverageFile=$(find . -name coverage.cobertura.xml)

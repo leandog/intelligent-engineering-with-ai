@@ -2,7 +2,7 @@
 Remove-Item -Recurse -Force TaskManagementApiTests/TestResults -ErrorAction Ignore
 
 # Run tests and collect coverage
-dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:Exclude="[TaskManagementApi]*TaskManagementApi.Migrations.*"
+dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:Exclude=\"[TaskManagementApi]*TaskManagementApi.Migrations.*,[TaskManagementApi]TaskManagementApi.Program,[TaskManagementApi]TaskManagementApi.Startup\"
 
 # Find the latest coverage file
 $coverageFile = Get-ChildItem -Recurse -Filter coverage.cobertura.xml | Sort-Object LastWriteTime -Descending | Select-Object -First 1
