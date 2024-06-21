@@ -37,12 +37,14 @@ Install Recommended Extensions:
 - Open Visual Studio Code.
 - Go to the Extensions view.
 - Search for and install the following extensions:
-  1. C# Dev Kit
-  2. C#
-  3. .NET Core Test Explorer
-  4. .NET Install Tool for Extension Authors
-  5. GitHub Copilot
-  6. CSharpier
+
+  1. C# Dev Kit - "ms-dotnettools.csdevkit"
+  2. C# - "ms-dotnettools.csharp"
+  3. Coverage Gutters - "ryanluker.vscode-coverage-gutters"
+  4. .NET Core Test Explorer - "formulahendry.dotnet-test-explorer"
+  5. GitHub Copilot - "GitHub.copilot"
+  6. GitHub Copilot Chat - "GitHub.copilot-chat"
+  7. CSharpier - "csharpier.csharpier-vscode"
 
 Enable GitHub Copilot:
 
@@ -79,7 +81,7 @@ Verify VS Code Installation:
 
 - **Celebrate**: You are now ready for the class!
 - **If you encounter any issues**:
-  - Reach out to Jeff Dunay at [jeff.dunay@leandogsoftware.com](mailto:jeff.dunay@leandogsoftware.com) for assistance.
+  - Reach out to Julias Shaw at [yoda@leandogsoftware.com](mailto:yoda@leandogsoftware.com) for assistance.
 
 ---
 

@@ -6,8 +6,6 @@
     "GitHub.copilot",
     "ms-dotnettools.csdevkit",
     "ms-dotnettools.csharp",
-    "ms-vscode.vscode-dotnet-runtime",
-    "ms-vsliveshare.vsliveshare",
     "ryanluker.vscode-coverage-gutters"
   ]
 }

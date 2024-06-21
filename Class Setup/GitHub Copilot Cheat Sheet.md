@@ -1,11 +1,24 @@
 # GitHub Copilot and Copilot Chat Cheat Sheet
 
-## GitHub Copilot Hotkeys
+## GitHub Copilot Hotkeys (Windows)
 
 - Autocomplete Suggestions:
-  - Accept Suggestion: `Tab` or `Enter`
-  - Trigger Suggestions Manually: `Ctrl + Space` (or `Cmd + Space` on Mac)
-  - Cycle Through Suggestions: `Alt + ]` and `Alt + [` (or `Option + ]` and `Option + [` on Mac)
+  - Accept an inline suggestion: `Tab`
+  - Dismiss an inline suggestion: `Esc`
+  - Show next inline suggestion: `Alt + ]`
+  - Show previous inline suggestion: `Alt + [`
+  - Trigger inline suggestion: `Alt + \`
+  - Open GitHub Copilot (additional suggestions in separate pane): `Alt + Enter`
+
+## GitHub Copilot Hotkeys (Mac)
+
+- Autocomplete Suggestions:
+  - Accept an inline suggestion: `Tab`
+  - Dismiss an inline suggestion: `Esc`
+  - Show next inline suggestion: `Option (⌥)` or `Alt + ]`
+  - Show previous inline suggestion: `Option (⌥)` or `Alt + [`
+  - Trigger inline suggestion: `Option (⌥) + \`
+  - Open GitHub Copilot (additional suggestions in separate pane): `Option (⌥)` or `Alt + Return`
 
 ## GitHub Copilot Tips
 

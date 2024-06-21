@@ -41,4 +41,4 @@ Your laptop must have the capabilities and proper configuration before attending
 
 ## Contact for Setup Issues
 
-If you have any issues or questions regarding setup, please reach out to Jeff Dunay at [jeff.dunay@leandogsoftware.com](mailto:jeff.dunay@leandogsoftware.com).
+If you have any issues or questions regarding setup, please reach out to Julias Shaw at [yoda@leandogsoftware.com](mailto:yoda@leandogsoftware.com).
