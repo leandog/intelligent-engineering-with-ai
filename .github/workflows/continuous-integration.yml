@@ -27,5 +27,7 @@ jobs:
         working-directory: C-Sharp/06-task-management-api
 
       - name: Run tests
-        run: ./run-tests-with-coverage.sh
+        run: |
+          dotnet tool install --global dotnet-reportgenerator-globaltool
+          ./run-tests-with-coverage.sh
         working-directory: C-Sharp/06-task-management-api
