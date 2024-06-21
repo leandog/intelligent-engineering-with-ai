@@ -21,11 +21,10 @@ The Task Application needs to be enhanced by adding a new feature that allows ta
      - `Low`
      - `Medium`
      - `High`
-   - Ensure that the `Priority` field is stored as an enum in the database.
 
 2. **Update API to Return Text Values for Priority**
 
-   - Modify the API to return the text values (`low`, `medium`, `high`) for the `Priority` field instead of numeric values.
+   - Modify the API to return the text values (`Low`, `Medium`, `High`) for the `Priority` field instead of numeric values.
    - Ensure that when tasks are retrieved through the API, the priority is displayed as a string value.
 
 3. **Order Tasks by Priority and Due Date**
